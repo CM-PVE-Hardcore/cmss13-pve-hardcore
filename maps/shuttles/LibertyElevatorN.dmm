@@ -120,7 +120,7 @@
 "E" = (
 /obj/structure/machinery/elevator_strut/top{
 	pixel_y = 30;
-	layer = 2;
+	layer = 2.8;
 	indestructible = 1
 	},
 /obj/structure/barricade/handrail{

@@ -269,28 +269,28 @@
 	name = "\improper Starboard Elevator"
 
 /area/liberty/vehicle_shuttle/s/one
-	name = "\improper Starboard Elevator Cargo Level"
+	name = "\improper Starboard Elevator Storage Deck"
 
 /area/liberty/vehicle_shuttle/s/two
-	name = "\improper Starboard Elevator Hanger Level"
+	name = "\improper Starboard Elevator Hanger Deck"
 
 /area/liberty/vehicle_shuttle/s/three
-	name = "\improper Starboard Elevator Cryo Level"
+	name = "\improper Starboard Elevator Crew Deck"
 
 /area/liberty/vehicle_shuttle/s/four
-	name = "\improper Starboard Elevator Command Level"
+	name = "\improper Starboard Elevator Command Deck"
 
 /area/liberty/vehicle_shuttle/n/
 	name = "\improper Port Vehicle Elevator"
 
 /area/liberty/vehicle_shuttle/n/one
-	name = "\improper Port Elevator Cargo Level"
+	name = "\improper Port Elevator Storage Deck"
 
 /area/liberty/vehicle_shuttle/n/two
-	name = "\improper Port Elevator Hanger Level"
+	name = "\improper Port Elevator Hanger Deck"
 
 /area/liberty/vehicle_shuttle/n/three
-	name = "\improper Port Elevator Cryo Level"
+	name = "\improper Port Elevator Crew Deck"
 
 /area/liberty/vehicle_shuttle/n/four
-	name = "\improper Port Elevator Command Level"
+	name = "\improper Port Elevator Command Deck"
