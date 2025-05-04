@@ -121,7 +121,8 @@
 /obj/structure/machinery/elevator_strut/top{
 	pixel_y = 30;
 	layer = 2.8;
-	indestructible = 1
+	indestructible = 1;
+	opacity = 0
 	},
 /obj/structure/barricade/handrail{
 	dir = 1;
@@ -147,10 +148,12 @@
 	shuttleId = "LibertyElevatorN";
 	can_block_movement = 0;
 	pixel_y = -4;
-	indestructible = 1
+	indestructible = 1;
+	layer = 4
 	},
 /obj/structure/barricade/handrail{
-	indestructible = 1
+	indestructible = 1;
+	layer = 4
 	},
 /obj/structure/barricade/handrail{
 	dir = 4;

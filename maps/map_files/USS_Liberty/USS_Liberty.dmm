@@ -4970,12 +4970,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/liberty/crew_deck/chapel)
-"fIJ" = (
-/obj/structure/roof/cargocrane_tracks/tjoint2{
-	pixel_y = 14
-	},
-/turf/closed/wall/almayer/outer,
-/area/liberty/vehicle_shuttle/n/two)
 "fIX" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -6941,16 +6935,6 @@
 	},
 /turf/open/floor/white,
 /area/liberty/crew_deck/section_1_hypersleep)
-"hNf" = (
-/obj/docking_port/stationary/trijent_elevator/shipmap_elevator/one{
-	airlock_area = /area/liberty/vehicle_shuttle/s/one;
-	name = "Starboard Elevator Cargo";
-	id = "LibertyElevatorS1";
-	elevator_network = "LibertyElevatorS";
-	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/south
-	},
-/turf/open/floor/almayer,
-/area/liberty/cargo_deck/motor_pool)
 "hNk" = (
 /turf/open/floor/almayer/black/west{
 	dir = 4
@@ -39380,7 +39364,7 @@ pBG
 pBG
 pBG
 pBG
-pBG
+sKL
 sKL
 sKL
 sKL
@@ -39731,9 +39715,9 @@ pBG
 pBG
 pBG
 pBG
-pBG
 sKL
 sKL
+hlX
 hlX
 aCZ
 rFt
@@ -40082,9 +40066,9 @@ pBG
 pBG
 pBG
 pBG
-pBG
 sKL
 sKL
+hlX
 hlX
 hlX
 sKL
@@ -40433,11 +40417,11 @@ pBG
 pBG
 pBG
 pBG
-pBG
 sKL
 sKL
 hlX
 hlX
+sKL
 sKL
 sKL
 rFt
@@ -40786,9 +40770,9 @@ pBG
 pBG
 pBG
 sKL
+hlX
+hlX
 sKL
-hlX
-hlX
 sKL
 pBG
 sKL
@@ -41137,9 +41121,9 @@ pBG
 pBG
 pBG
 sKL
+hlX
+hlX
 sKL
-hlX
-hlX
 sKL
 pBG
 cZt
@@ -41490,7 +41474,7 @@ pBG
 pBG
 sKL
 hlX
-hlX
+sKL
 sKL
 pBG
 cZt
@@ -43883,7 +43867,7 @@ pBG
 pBG
 pBG
 pBG
-iqp
+pBG
 iqp
 iqp
 hGm
@@ -43917,7 +43901,7 @@ hGm
 hGm
 iqp
 iqp
-iqp
+pBG
 pBG
 pBG
 pBG
@@ -44236,7 +44220,7 @@ pBG
 pBG
 pBG
 iqp
-hGm
+iqp
 hGm
 hGm
 cKU
@@ -44268,7 +44252,7 @@ qHG
 cKU
 hGm
 hGm
-hGm
+iqp
 iqp
 pBG
 pBG
@@ -44589,7 +44573,7 @@ pBG
 pBG
 iqp
 hGm
-iqp
+hGm
 cKU
 cKU
 oUB
@@ -44619,7 +44603,7 @@ aDZ
 aDZ
 cKU
 cKU
-iqp
+hGm
 hGm
 iqp
 pBG
@@ -51981,7 +51965,7 @@ pBG
 pBG
 iqp
 hGm
-iqp
+hGm
 cKU
 cKU
 uXx
@@ -52011,7 +51995,7 @@ mLL
 uGP
 cKU
 cKU
-iqp
+hGm
 hGm
 iqp
 pBG
@@ -52332,7 +52316,7 @@ pBG
 pBG
 pBG
 iqp
-hGm
+iqp
 hGm
 hGm
 cKU
@@ -52364,7 +52348,7 @@ cKU
 cKU
 hGm
 hGm
-hGm
+iqp
 iqp
 pBG
 pBG
@@ -52683,7 +52667,7 @@ pBG
 pBG
 pBG
 pBG
-iqp
+pBG
 iqp
 iqp
 hGm
@@ -52717,7 +52701,7 @@ hGm
 hGm
 iqp
 iqp
-iqp
+pBG
 pBG
 pBG
 pBG
@@ -54809,7 +54793,7 @@ tUG
 tUG
 tUG
 tUG
-fIJ
+tUG
 eBK
 ffk
 xBU
@@ -62966,7 +62950,7 @@ sKL
 lOt
 sVA
 sFl
-hNf
+cZc
 cZc
 fot
 fot

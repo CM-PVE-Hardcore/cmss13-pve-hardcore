@@ -41,7 +41,8 @@
 "l" = (
 /obj/structure/machinery/elevator_strut/bottom{
 	pixel_y = -2;
-	indestructible = 1
+	indestructible = 1;
+	opacity = 0
 	},
 /obj/structure/barricade/handrail{
 	indestructible = 1;
