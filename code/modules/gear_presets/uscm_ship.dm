@@ -649,8 +649,8 @@
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
 
 	idtype = /obj/item/card/id/dogtag
-	assignment = JOB_XO
-	rank = JOB_XO
+	assignment = JOB_ADJ
+	rank = JOB_ADJ
 	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ADJ"
 	minimum_age = 20
