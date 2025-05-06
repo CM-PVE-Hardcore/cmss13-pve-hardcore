@@ -316,7 +316,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/head/cmcap/snow
 
 /datum/gear/headwear/uscm/cap/sulaco
-	display_name = "USS Golden Arrow cap"
+	display_name = "USS Queequeg cap"
 	path = /obj/item/clothing/head/sulacocap
 	cost = 1
 
@@ -1011,6 +1011,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	cost = 4
 	allowed_origins = USCM_ORIGINS
 
+/datum/gear/weapon/m48a4
+	display_name = "M48A4 Service Pistol"
+	path = /obj/item/storage/box/loadout/M48A4_loadout
+	cost = 4
+	allowed_origins = USCM_ORIGINS
+
 /datum/gear/weapon/m44
 	display_name = "M44 Revolver"
 	path = /obj/item/storage/box/loadout/M44_loadout
@@ -1446,9 +1452,9 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	slot = WEAR_IN_ACCESSORY
 	allowed_origins = USCM_ORIGINS
 
-/datum/gear/misc/patch_uscm/devils
-	display_name = "Solar Devils shoulder patch"
-	path = /obj/item/clothing/accessory/patch/devils
+/datum/gear/misc/patch_uscm/deuce
+	display_name = "Double Deuce shoulder patch"
+	path = /obj/item/clothing/accessory/patch/deuce
 
 /datum/gear/misc/family_photo
 	display_name = "Family photo"

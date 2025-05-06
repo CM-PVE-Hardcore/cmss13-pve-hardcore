@@ -190,8 +190,8 @@
 	)
 
 /obj/item/clothing/head/sulacocap
-	name = "\improper USS Golden Arrow Cap"
-	desc = "A casual cap able to be purchased and worn by Marines stationed on the USS Golden Arrow. While it only protects from the sun, it's much more comfortable than a helmet."
+	name = "\improper USS Queequeg Cap"
+	desc = "A casual cap able to be purchased and worn by Marines stationed on the USS Queequeg. While it only protects from the sun, it's much more comfortable than a helmet."
 	icon_state = "sulacocap"
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	var/helmet_overlays[]
@@ -772,9 +772,16 @@
 	desc = "An improvised head wrap made out of a black neckerchief. Great for keeping the sweat out of your eyes and protecting your hair."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 
-/obj/item/clothing/head/durag/Initialize(mapload, ...)
-	. = ..()
-	select_gamemode_skin(/obj/item/clothing/head/durag)
+/obj/item/clothing/head/skullcap
+	name = "skullcap"
+	desc = "A head wrap. Great for keeping the sweat out of your eyes and protecting your hair."
+	icon_state = "skullcap"
+	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	flags_atom = NO_SNOW_TYPE
+	flags_inv_hide = HIDETOPHAIR
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+	)
 
 /obj/item/clothing/head/drillhat
 	name = "\improper USCM drill hat"

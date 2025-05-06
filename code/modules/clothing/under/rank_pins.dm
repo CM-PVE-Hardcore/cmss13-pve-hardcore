@@ -72,22 +72,22 @@
 
 /obj/item/clothing/accessory/ranks/marine/w2
 	name = "rank boards"
-	rank_short = PAY_SHORT_MW2
+	rank_short = PAY_SHORT_MCW1
 	icon_state = "ranks_juniorwarrant"
 
 /obj/item/clothing/accessory/ranks/marine/w3
 	name = "rank boards"
-	rank_short = PAY_SHORT_MW3
+	rank_short = PAY_SHORT_MCW2
 	icon_state = "ranks_warrant"
 
 /obj/item/clothing/accessory/ranks/marine/w4
 	name = "rank boards"
-	rank_short = PAY_SHORT_MW4
+	rank_short = PAY_SHORT_MCW3
 	icon_state = "ranks_warrant"
 
 /obj/item/clothing/accessory/ranks/marine/w5
 	name = "rank boards"
-	rank_short = PAY_SHORT_MW5
+	rank_short = PAY_SHORT_MCW4
 	icon_state = "ranks_seniorwarrant"
 
 //OFFICERS
@@ -447,3 +447,23 @@
 	name = "rank boards"
 	rank_short = "PvI"
 	icon_state = "ranks_pvstofficer"
+
+/obj/item/clothing/accessory/ranks/canc
+	name = "CANC collar tabs"
+	rank_short = null
+	icon_state = "ranks_canc"
+
+/obj/item/clothing/accessory/ranks/canc/e1
+	rank_short = PAY_SHORT_CA1
+
+/obj/item/clothing/accessory/ranks/canc/e2
+	rank_short = PAY_SHORT_CA2
+
+/obj/item/clothing/accessory/ranks/canc/e3
+	rank_short = PAY_SHORT_CA3
+
+/obj/item/clothing/accessory/ranks/canc/e4
+	rank_short = PAY_SHORT_CA4
+
+/obj/item/clothing/accessory/ranks/canc/e5
+	rank_short = PAY_SHORT_CA5

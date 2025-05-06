@@ -3,10 +3,10 @@
 #define GET_DEFAULT_ROLE(title) (GLOB.RoleAuthority?.default_roles[title] ? GLOB.RoleAuthority.default_roles[title] : title)
 
 // Squad name defines
-#define SQUAD_MARINE_1 "Sun Riders"
-#define SQUAD_MARINE_2 "Bravo"
-#define SQUAD_MARINE_3 "Charlie"
-#define SQUAD_MARINE_4 "Delta"
+#define SQUAD_MARINE_1 "Night Owls"
+#define SQUAD_MARINE_2 "Boondock Battlements"
+#define SQUAD_MARINE_3 "Flaming Deuces"
+#define SQUAD_MARINE_4 "Toxic Eagls"
 #define SQUAD_MARINE_5 "Echo"
 #define SQUAD_MARINE_CRYO "Foxtrot"
 #define SQUAD_MARINE_INTEL "Intel"
@@ -90,6 +90,7 @@ GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 
 #define JOB_CO "Commanding Officer"
 #define JOB_XO "Executive Officer"
+#define JOB_ADJ "Adjutant"
 #define JOB_SO "Platoon Commander"
 #define JOB_COMMAND_ROLES /datum/timelock/command
 #define JOB_COMMAND_ROLES_LIST   list(JOB_CO, JOB_XO, JOB_SO)
@@ -312,6 +313,18 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define CMB_GRUNT_LIST list(JOB_CMB, JOB_CMB_TL)
 
+//-------- NSPA --------//
+#define JOB_NSPA_CST "NSPA Constable"
+#define JOB_NSPA_SC "NSPA Senior Constable"
+#define JOB_NSPA_SGT "NSPA Sergeant"
+#define JOB_NSPA_INSP "NSPA Inspector"
+#define JOB_NSPA_CINSP "NSPA Chief Inspector"
+#define JOB_NSPA_CMD "NSPA Commander"
+#define JOB_NSPA_DCO "NSPA Deputy Commissioner"
+#define JOB_NSPA_COM "NSPA Commissioner"
+
+#define NSPA_GRUNT_LIST list(JOB_NSPA_CST, JOB_NSPA_SC, JOB_NSPA_SGT)
+
 //-------- FORECON --------//
 
 #define JOB_FORECON_CO "Reconnaissance Commander"
@@ -440,6 +453,12 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_PLAYTIME_TIER_2  (25 HOURS)
 #define JOB_PLAYTIME_TIER_3  (70 HOURS)
 #define JOB_PLAYTIME_TIER_4  (175 HOURS)
+#define JOB_PLAYTIME_TIER_5  (350 HOURS)
+#define JOB_PLAYTIME_TIER_6  (600 HOURS)
+#define JOB_PLAYTIME_TIER_7  (1000 HOURS)
+#define JOB_PLAYTIME_TIER_8  (1500 HOURS)
+#define JOB_PLAYTIME_TIER_9  (2100 HOURS)
+#define JOB_PLAYTIME_TIER_10 (2800 HOURS)
 
 #define XENO_NO_AGE  -1
 #define XENO_NORMAL 0

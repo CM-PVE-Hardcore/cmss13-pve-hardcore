@@ -6,5 +6,15 @@
 # Case IS important for the rank. However punctuation/spaces are not #
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
-
+ 
 # not_a_user - Host
+ 
+Bamhalazam - Host
+peepeepeeter - Senior Gamemaster
+burnedsweetpotato - Head Gamemaster
+RenMagnum - Trial Gamemaster
+Tristan63 - Trial Gamemaster
+tallerfission - Trial Gamemaster
+ 
+ 
+ 
