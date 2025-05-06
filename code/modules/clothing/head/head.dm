@@ -190,8 +190,8 @@
 	)
 
 /obj/item/clothing/head/sulacocap
-	name = "\improper USS Golden Arrow Cap"
-	desc = "A casual cap able to be purchased and worn by Marines stationed on the USS Golden Arrow. While it only protects from the sun, it's much more comfortable than a helmet."
+	name = "\improper USS Queequeg Cap"
+	desc = "A casual cap able to be purchased and worn by Marines stationed on the USS Queequeg. While it only protects from the sun, it's much more comfortable than a helmet."
 	icon_state = "sulacocap"
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	var/helmet_overlays[]

@@ -18,8 +18,10 @@
 	role_mappings = list(
 		/datum/job/command/bridge/ai = JOB_SO,
 		/datum/job/command/pilot/dropship_pilot = JOB_DROPSHIP_PILOT,
+		/datum/job/command/crew_chief/ai = JOB_DROPSHIP_CREW_CHIEF,
 		/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,
 		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,
+		/datum/job/marine/engineer/ai = JOB_SQUAD_ENGI,
 		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
 		/datum/job/marine/smartgunner/ai = JOB_SQUAD_SMARTGUN,
 		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE,
@@ -84,7 +86,9 @@
 GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/job/command/bridge/ai = JOB_SO,\
 		/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,\
 		/datum/job/command/pilot/dropship_pilot = JOB_DROPSHIP_PILOT,\
+		/datum/job/command/crew_chief/ai = JOB_DROPSHIP_CREW_CHIEF,\
 		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,\
+		/datum/job/marine/engineer/ai = JOB_SQUAD_ENGI,\
 		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
 		/datum/job/marine/smartgunner/ai = JOB_SQUAD_SMARTGUN,\
 		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE),\

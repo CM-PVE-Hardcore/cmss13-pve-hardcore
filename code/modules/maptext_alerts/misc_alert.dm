@@ -30,6 +30,9 @@
 /atom/movable/screen/text/screen_text/picture/double_deuce
 	image_to_play = "double_deuce"
 
+/atom/movable/screen/text/screen_text/picture/double_deuce
+	image_to_play = "night_owls"
+
 /atom/movable/screen/text/screen_text/picture/red_dawn
 	image_to_play = "red_dawn"
 

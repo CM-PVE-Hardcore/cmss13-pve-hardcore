@@ -1,0 +1,18 @@
+{
+    "map_name": "Oil Depot 276",
+    "map_path": "map_files/Oil_Depot",
+    "map_file": "oil_depot.dmm",
+    "webmap_url": "OilDepot",
+    "map_item_type": "/obj/item/map/whiskey_outpost_map",
+    "announce_text": "Our forces need help on USCM Oil Depot 276 on the planet \"Sorrow.\" The ###SHIPNAME### has been dispatched to assist.",
+    "monkey_types": [
+        "stok"
+    ],
+    "traits": [{ "Ground": true }],
+    "nightmare_path": "maps/Nightmare/maps/Oil_Depot/",
+    "camouflage": "desert",
+    "gamemodes": [
+        "Distress Signal",
+        "Infection"
+    ]
+}

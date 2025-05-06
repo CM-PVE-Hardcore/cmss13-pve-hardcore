@@ -160,6 +160,7 @@
 	name = "\improper Worn United States of America flag"
 	desc = "A very worn flag of the United States of America. Inspires patriotism, fear, or revulsion depending on the viewer's political leanings."
 	icon_state = "usaflag_worn"
+
 //=====================//
 // SEMIOTIC STANDARD  //
 //===================//
@@ -682,6 +683,16 @@
 	name = "\improper USCM Poster"
 	desc = "The symbol of the United States Colonial Marines corps."
 	icon_state = "prop1"
+
+/obj/structure/sign/prop1_alt
+	name = "\improper USCM Poster"
+	desc = "The symbol of the United States Colonial Marines corps, it's faded over time."
+	icon_state = "prop1_alt"
+
+/obj/structure/sign/prop1_alt2
+	name = "\improper Worn USCM Poster"
+	desc = "The symbol of the United States Colonial Marines corps, very worn and faded over time."
+	icon_state = "prop1_alt2"
 
 /obj/structure/sign/prop2
 	name = "\improper USCM Poster"
