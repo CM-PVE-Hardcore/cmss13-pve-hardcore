@@ -29,6 +29,7 @@
 	return list(
 			JOB_CO,
 			JOB_XO,
+			JOB_ADJ,
 			JOB_SO,
 			JOB_INTEL,
 			JOB_CAS_PILOT,
