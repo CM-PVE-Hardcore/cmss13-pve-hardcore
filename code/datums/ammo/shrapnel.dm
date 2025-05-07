@@ -98,13 +98,13 @@
 	accuracy = HIT_ACCURACY_TIER_MAX
 	accurate_range = 14
 	max_range = 18
-	damage = 40
+	damage = 25
 	damage_var_low = PROJECTILE_VARIANCE_TIER_10
 	damage_var_high = PROJECTILE_VARIANCE_TIER_5
-	//justifying the AP as being the sheer density of stuff ig.
-	penetration = ARMOR_PENETRATION_TIER_2
-	shell_speed = AMMO_SPEED_TIER_2
+	penetration = ARMOR_PENETRATION_TIER_1
+	shell_speed = AMMO_SPEED_TIER_3
 	shrapnel_chance = 10
+	delimb_multiplier = 10
 
 /datum/ammo/bullet/shrapnel/claymore/set_bullet_traits()
 	. = ..()
