@@ -254,6 +254,7 @@
 	name = "start"
 	icon_state = "x"
 	anchored = TRUE
+	var/single_use = FALSE
 	var/job
 	var/squad
 
@@ -401,6 +402,7 @@
 /obj/effect/landmark/late_join
 	name = "late join"
 	icon_state = "x2"
+	var/single_use = FALSE
 	var/squad
 	/// What job should latejoin on this landmark
 	var/job

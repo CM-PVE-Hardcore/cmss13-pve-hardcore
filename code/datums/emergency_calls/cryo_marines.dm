@@ -36,6 +36,8 @@
 	else
 		human.create_hud()
 
+	delete_single_use_landmarks(human.loc)
+
 	if(!mind)
 		FOR_DVIEW(var/obj/structure/machinery/cryopod/pod, 7, human, HIDE_INVISIBLE_OBSERVER)
 			if(pod && !pod.occupant)
