@@ -91,6 +91,8 @@
 	var/damage_boosted = 0
 	var/last_damage_mult = 1
 
+	var/always_target_limb = FALSE
+
 /obj/projectile/Initialize(mapload, datum/cause_data/cause_data)
 	. = ..()
 	path = list()
@@ -517,7 +519,7 @@
 		var/direct_hit = FALSE
 
 		// Wasn't the clicked target
-		if(original != L)
+		if(original != L && !always_target_limb)
 			def_zone = rand_zone()
 
 		// Xenos get a RNG limb miss chance regardless of being clicked target or not, see below
@@ -1034,7 +1036,7 @@
 		handle_blood_splatter(splatter_dir)
 
 		. = TRUE
-		apply_damage(damage_result, P.ammo.damage_type, P.def_zone, firer = P.firer)
+		apply_damage(damage_result, P.ammo.damage_type, P.def_zone, firer = P.firer, delimb_multiplier = P.ammo.delimb_multiplier)
 
 		if(P.ammo.shrapnel_chance > 0 && prob(P.ammo.shrapnel_chance + floor(damage / 10)))
 			if(ammo_flags & AMMO_SPECIAL_EMBED)

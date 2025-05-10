@@ -268,7 +268,7 @@
 							list/forbidden_limbs = list(),
 							no_limb_loss, damage_source = create_cause_data("amputation"),\
 							mob/attack_source = null,\
-							brute_reduced_by = -1, burn_reduced_by = -1)
+							brute_reduced_by = -1, burn_reduced_by = -1, delimb_multiplier = 1)
 	if((brute <= 0) && (burn <= 0))
 		return 0
 
@@ -371,7 +371,7 @@
 	var/no_bone_break = owner.chem_effect_flags & CHEM_EFFECT_RESIST_FRACTURE
 	if(previous_brute > 0 && !is_ff && body_part != BODY_FLAG_CHEST && body_part != BODY_FLAG_GROIN && !no_limb_loss && !no_perma_damage && !no_bone_break)
 		if(CONFIG_GET(flag/limbs_can_break) && brute_dam >= max_damage * CONFIG_GET(number/organ_health_multiplier) && (status & LIMB_BROKEN))
-			var/cut_prob = brute/max_damage * 5
+			var/cut_prob = brute/max_damage * 5 * delimb_multiplier
 			if(prob(cut_prob))
 				limb_delimb(damage_source)
 
