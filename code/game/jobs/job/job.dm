@@ -296,6 +296,8 @@
 			join_turf = get_turf(pick(GLOB.latejoin))
 		human.forceMove(join_turf)
 
+		delete_single_use_landmarks(human.loc)
+
 		for(var/cardinal in GLOB.cardinals)
 			var/obj/structure/machinery/cryopod/pod = locate() in get_step(human, cardinal)
 			if(pod)
