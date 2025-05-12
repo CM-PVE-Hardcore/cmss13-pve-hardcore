@@ -298,11 +298,15 @@
 
 		delete_single_use_landmarks(human.loc)
 
-		for(var/cardinal in GLOB.cardinals)
-			var/obj/structure/machinery/cryopod/pod = locate() in get_step(human, cardinal)
-			if(pod)
-				pod.go_in_cryopod(human, TRUE)
-				break
+		var/obj/structure/machinery/cryopod/pod = locate() in get_turf(human)
+		if (pod)
+			pod.go_in_cryopod(human, silent = TRUE)
+		else
+			for(var/cardinal in GLOB.cardinals)
+				pod = locate() in get_step(human, cardinal)
+				if(pod)
+					pod.go_in_cryopod(human, silent = TRUE)
+					break
 
 		human.sec_hud_set_ID()
 		human.hud_set_squad()
