@@ -417,8 +417,8 @@
 //=======================================================================\\
 
 /obj/item/storage/backpack/marine
-	name = "\improper lightweight IMP backpack"
-	desc = "The standard-issue pack of the USCM and US Army forces. Designed to lug gear into the battlefield using the Intuitive Mounting Point system on M3 armor."
+	name = "\improper surplus USCM backpack"
+	desc = "An outdated backpack system utilized by the USCM prior to the Marine 70 program. The basic design still remains as the basis for various specialized backpacks still in service in the USCM."
 	icon_state = "imp"
 	item_state = "imp"
 	has_gamemode_skin = FALSE //replace this with the atom_flag NO_SNOW_TYPE at some point, just rename it to like, NO_MAP_VARIANT_SKIN
@@ -1201,3 +1201,249 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 /obj/item/storage/backpack/marine/satchel/intel/chestrig/army
 	name = "\improper Army expedition chestrig"
 	desc = "A heavy-duty IMP based chestrig, can quickly be accessed with only one hand. Usually issued to intelligence officers."
+
+//==========================// IMP BACKPACK \\================================\\
+//=======================================================================\\
+
+/obj/item/storage/backpack/marine/imp
+	name = "\improper IMP backpack"
+	desc = "A lightweight backpack developed for the Marine 70 program, dubbed the IMP (Individual Mounting Points) backpack. There are various clips around the backpack to attach specialized gear to. Attachable items: 2x pouches, e-tool, bedroll, helmet, and choice of sadar, m56d gun, or tripod."
+	icon_state = "imp"
+	item_state = "imp"
+	max_storage_space = 18
+
+	var/list/pouch_attachments = list()
+	var/list/bag_attachments = list()
+	var/obj/item/top_slot = null
+	var/mob/attached_user = null
+	var/list/mob_overlays = list()
+
+	var/list/attachable_items = list(
+		/obj/item/storage/pouch,
+		/obj/item/tool/shovel/etool,
+		/obj/item/roller/bedroll,
+		/obj/item/clothing/head/helmet/marine,
+		/obj/item/prop/folded_anti_tank_sadar,
+		/obj/item/device/m56d_gun,
+		/obj/item/device/m56d_post
+	)
+
+	time_to_equip = 2 SECONDS
+	time_to_unequip = 2 SECONDS
+	slowdown = SLOWDOWN_ARMOR_SUPER_LIGHT
+
+/obj/item/storage/backpack/marine/imp/get_examine_text(mob/user)
+	. = ..()
+
+	if(top_slot)
+		. += "[icon2html(top_slot, user)] \A [top_slot] is attached to it at the top."
+
+	for(var/obj/item/pouch in pouch_attachments)
+		. += "[icon2html(pouch, user)] \A [pouch] is attached to it."
+
+	for(var/obj/item/attachment in bag_attachments)
+		. += "[icon2html(attachment, user)] \A [attachment] is attached to it."
+
+/obj/item/storage/backpack/marine/imp/get_examine_line(mob/user)
+	. = ..()
+
+	var/list/items = list()
+
+	if(top_slot)
+		items += "\a [top_slot.get_examine_line(user)]"
+
+	for(var/obj/item/item in pouch_attachments)
+		items += "\a [item.get_examine_line(user)]"
+
+	if(length(items))
+		. += " with [english_list(items)] attached"
+
+	if(length(bag_attachments))
+		. += ". <a href='byond://?src=\ref[src];list_acc=1'>\[See accessories\]</a>"
+
+/obj/item/storage/backpack/marine/imp/Topic(href, href_list)
+	. = ..()
+	if(.)
+		return
+	if(href_list["list_acc"])
+		if(length(bag_attachments))
+			var/list/things = list()
+			if(top_slot)
+				things += "[icon2html(top_slot)] \a [top_slot]"
+			for(var/obj/item/attachment in bag_attachments + pouch_attachments)
+				things += "[icon2html(attachment)] \a [attachment]"
+			to_chat(usr, "Attached to \the [src] are [english_list(things)].")
+		return
+
+/obj/item/storage/backpack/marine/imp/get_examine_text(mob/user)
+	. = ..()
+
+	. += SPAN_NOTICE("Attach items by holding <b>Ctrl</b> and clicking the bag with the item, detach by holding <b>Alt</b>.")
+
+/obj/item/storage/backpack/marine/imp/clicked(mob/user, list/mods)
+	// CTRL-Click = Attach Item
+	if (mods["ctrl"])
+		var/obj/item/I = user.get_active_hand()
+		if (!I)
+			return
+
+		if (!CAN_PICKUP(user, I))
+			return
+
+		if(!do_after(user, 1 SECONDS, INTERRUPT_ALL, BUSY_ICON_FRIENDLY, src, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
+			return
+		attach_item(user, I)
+		return TRUE
+
+	// ALT-Click = Detach Item
+	if (mods["alt"])
+		if (!user)
+			return
+
+		var/list/options = list()
+		for (var/obj/item/I in pouch_attachments + top_slot + bag_attachments)
+			options += I
+
+		if (!options.len)
+			to_chat(user, SPAN_NOTICE("There are no items attached to the backpack."))
+			return
+
+		var/obj/item/selected = tgui_input_list(user, "Select an item to remove:", "Backpack Attachments", options)
+		if (!selected)
+			return
+
+		if(!do_after(user, 1 SECONDS, INTERRUPT_ALL, BUSY_ICON_FRIENDLY, src, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
+			return
+
+		if (pouch_attachments.Find(selected))
+			pouch_attachments -= selected
+		else if (bag_attachments.Find(selected))
+			bag_attachments -= selected
+		else
+			top_slot = null
+
+		user.put_in_hands(selected)
+		to_chat(user, SPAN_NOTICE("You remove [selected.name] from the backpack."))
+		update_icon()
+		user.update_inv_back()
+		return TRUE
+
+	return ..()
+
+/obj/item/storage/backpack/marine/imp/proc/attach_item(mob/living/user, obj/item/I)
+	if (!I || !istype(I, /obj/item))
+		return
+
+	var/item_is_attachable = FALSE
+	for (var/path in attachable_items)
+		if (istype(I, path))
+			item_is_attachable = TRUE
+			break
+
+	if (!item_is_attachable)
+		to_chat(user, SPAN_WARNING("This item can't be attached to the backpack."))
+		return
+
+	if (!istype(I, /obj/item/storage/pouch))
+		for (var/obj/item/A in bag_attachments)
+			if (A.type == I.type)
+				to_chat(user, SPAN_WARNING("You can't attach more than one [I.name]-type item."))
+				return
+
+	if (istype(I, /obj/item/prop/folded_anti_tank_sadar) || istype(I, /obj/item/device/m56d_gun) || istype(I, /obj/item/device/m56d_post))
+		if (top_slot != null)
+			to_chat(user, SPAN_WARNING("The backpack already has a large item on top of it."))
+			return
+		top_slot = I
+		user.drop_held_item()
+		I.loc = null
+		update_icon()
+		user.update_inv_back()
+		to_chat(user, SPAN_NOTICE("You attach [I.name] to the backpack."))
+		return
+
+	if (istype(I, /obj/item/tool/shovel/etool))
+		var/obj/item/tool/shovel/etool/etool_item = I
+		if (!etool_item.folded)
+			to_chat(user, SPAN_WARNING("The entrenching tool must be folded before it can be attached."))
+			return
+
+	if (istype(I, /obj/item/storage/pouch))
+		if (pouch_attachments.len >= 2)
+			to_chat(user, SPAN_WARNING("You can't attach more than two pouches."))
+			return
+		pouch_attachments += I
+	else
+		if (bag_attachments.len >= 4)
+			to_chat(user, SPAN_WARNING("You can't attach more than four items."))
+			return
+		bag_attachments += I
+
+	user.drop_held_item()
+	I.loc = null
+	update_icon()
+	to_chat(user, SPAN_NOTICE("You attach [I.name] to the backpack."))
+	user.update_inv_back()
+
+/obj/item/storage/backpack/marine/imp/update_icon()
+	overlays.Cut()
+
+	var/sum_storage_cost = 0
+	for (var/obj/item/I in contents)
+		sum_storage_cost += I.get_storage_cost()
+
+	if (sum_storage_cost > 0)
+		if (sum_storage_cost <= max_storage_space * 0.5)
+			overlays += "+imp_half"
+		else
+			overlays += "+imp_full"
+
+	if (pouch_attachments.len >= 1)
+		overlays += "+imp_leftpouch"
+	if (pouch_attachments.len >= 2)
+		overlays += "+imp_rightpouch"
+
+	for (var/obj/item/I in bag_attachments)
+		if (istype(I, /obj/item/tool/shovel/etool))
+			overlays += "+imp_shovel"
+		if (istype(I, /obj/item/roller/bedroll))
+			overlays += "+imp_bedroll"
+		if (istype(I, /obj/item/clothing/head/helmet/marine))
+			overlays += "+imp_helmet"
+
+	if (istype(top_slot, /obj/item/prop/folded_anti_tank_sadar))
+		overlays += "+imp_sadar"
+	if (istype(top_slot, /obj/item/device/m56d_gun))
+		overlays += "+imp_m56d_gun"
+	if (istype(top_slot, /obj/item/device/m56d_post))
+		overlays += "+imp_m56d_post"
+
+/obj/item/storage/backpack/marine/imp/get_mob_overlay(mob/user, slot)
+	var/image/ret = ..()
+
+	if(slot != WEAR_BACK)
+		return ret
+
+	if(istype(top_slot, /obj/item/prop/folded_anti_tank_sadar))
+		ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "sadar", color, RESET_COLOR)
+	else if(istype(top_slot, /obj/item/device/m56d_gun))
+		ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "m56d_gun", color, RESET_COLOR)
+	else if(istype(top_slot, /obj/item/device/m56d_post))
+		ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "m56d_post", color, RESET_COLOR)
+
+	for(var/obj/item/I in bag_attachments)
+		if(istype(I, /obj/item/tool/shovel/etool))
+			ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "shovel", color, RESET_COLOR)
+		else if(istype(I, /obj/item/roller/bedroll))
+			ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "bedroll", color, RESET_COLOR)
+		else if(istype(I, /obj/item/clothing/head/helmet/marine))
+			ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "helmet", color, RESET_COLOR)
+
+	if(pouch_attachments.len >= 1)
+		ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "pouch_left", color, RESET_COLOR)
+
+	if(pouch_attachments.len == 2)
+		ret.overlays += overlay_image('icons/mob/humans/onmob/back.dmi', "pouch_right", color, RESET_COLOR)
+
+	return ret
+
