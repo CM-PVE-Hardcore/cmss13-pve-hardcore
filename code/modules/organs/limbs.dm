@@ -1461,7 +1461,8 @@ treat_grafted var tells it to apply to grafted but unsalved wounds, for burn kit
 /obj/limb/head/take_damage(brute, burn, sharp, edge, used_weapon = null,\
 							list/forbidden_limbs = list(), no_limb_loss,\
 							mob/attack_source = null,\
-							brute_reduced_by = -1, burn_reduced_by = -1)
+							brute_reduced_by = -1, burn_reduced_by = -1,\
+							delimb_multiplier = 1)
 	. = ..()
 
 /obj/limb/head/reset_limb_surgeries()
