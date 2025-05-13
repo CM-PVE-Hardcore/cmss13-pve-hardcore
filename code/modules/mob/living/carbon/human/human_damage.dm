@@ -410,7 +410,7 @@ This function restores all limbs.
 */
 /mob/living/carbon/human/apply_damage(damage = 0, damagetype = BRUTE, def_zone = null, \
 	sharp = 0, edge = 0, obj/used_weapon = null, no_limb_loss = FALSE, \
-	permanent_kill = FALSE, mob/firer = null, force = FALSE
+	permanent_kill = FALSE, mob/firer = null, force = FALSE, delimb_multiplier = 1
 )
 	if(protection_aura && damage > 0)
 		damage = floor(damage * ((ORDER_HOLD_CALC_LEVEL - protection_aura) / ORDER_HOLD_CALC_LEVEL))
@@ -452,7 +452,7 @@ This function restores all limbs.
 				var/brute_mod = get_brute_mod()
 				if(brute_mod)
 					damage *= brute_mod
-			if(organ.take_damage(damage, 0, sharp, edge, used_weapon, no_limb_loss = no_limb_loss, attack_source = firer))
+			if(organ.take_damage(damage, 0, sharp, edge, used_weapon, no_limb_loss = no_limb_loss, attack_source = firer, delimb_multiplier = delimb_multiplier))
 				UpdateDamageIcon()
 		if(BURN)
 			damageoverlaytemp = 20
@@ -460,7 +460,7 @@ This function restores all limbs.
 				var/burn_mod = get_burn_mod()
 				if(burn_mod)
 					damage *= burn_mod
-			if(organ.take_damage(0, damage, sharp, edge, used_weapon, no_limb_loss = no_limb_loss, attack_source = firer))
+			if(organ.take_damage(0, damage, sharp, edge, used_weapon, no_limb_loss = no_limb_loss, attack_source = firer, delimb_multiplier = delimb_multiplier))
 				UpdateDamageIcon()
 
 	pain.apply_pain(damage, damagetype)

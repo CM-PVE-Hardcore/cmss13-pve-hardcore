@@ -17,6 +17,10 @@ map almayer
 endmap
 
 map golden_arrow
+	disabled
+endmap
+
+map liberty
 	default
 endmap
 

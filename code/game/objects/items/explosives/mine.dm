@@ -223,15 +223,14 @@
 	set waitfor = 0
 
 	if(!customizable)
-		create_shrapnel(loc, 60, dir, angle, /datum/ammo/bullet/shrapnel/claymore, cause_data)
+		create_shrapnel(loc, 30, dir, angle, /datum/ammo/bullet/shrapnel/claymore, cause_data, def_zones = MOVEMENT_LIMBS)
 		// a claymore is essentially a block of C4 with metal in the front. Shit's fuckin nasty.
-		cell_explosion(loc, 120, 50, EXPLOSION_FALLOFF_SHAPE_LINEAR, dir, cause_data)
+		cell_explosion(loc, 70, 30, EXPLOSION_FALLOFF_SHAPE_LINEAR, dir, cause_data)
 		qdel(src)
 	else
 		. = ..()
 		if(!QDELETED(src))
 			disarm()
-
 
 /obj/item/explosive/mine/attack_alien(mob/living/carbon/xenomorph/M)
 	if(triggered) //Mine is already set to go off
@@ -312,7 +311,7 @@
 	set waitfor = 0
 
 	if(!customizable)
-		create_shrapnel(loc, 15, dir, angle, /datum/ammo/bullet/shrapnel/claymore/confetti, cause_data)
+		create_shrapnel(loc, 15, dir, angle, /datum/ammo/bullet/shrapnel/claymore/confetti, cause_data, def_zones = MOVEMENT_LIMBS)
 		// low lethality edition
 		cell_explosion(loc, 60, 25, EXPLOSION_FALLOFF_SHAPE_LINEAR, dir, cause_data)
 		qdel(src)
@@ -346,7 +345,7 @@
 	set waitfor = 0
 
 	if(!customizable)
-		create_shrapnel(loc, 30, dir, angle, /datum/ammo/bullet/shrapnel/claymore/confetti, cause_data)
+		create_shrapnel(loc, 15, dir, angle, /datum/ammo/bullet/shrapnel/claymore/confetti, cause_data, def_zones = MOVEMENT_LIMBS)
 		// low lethality edition
 		cell_explosion(loc, 60, 25, EXPLOSION_FALLOFF_SHAPE_LINEAR, dir, cause_data)
 		qdel(src)

@@ -1,5 +1,5 @@
 
-/proc/create_shrapnel(turf/epicenter, shrapnel_number = 10, shrapnel_direction, shrapnel_spread = 45, datum/ammo/shrapnel_type = /datum/ammo/bullet/shrapnel, datum/cause_data/cause_data, ignore_source_mob = FALSE, on_hit_coefficient = 0.15)
+/proc/create_shrapnel(turf/epicenter, shrapnel_number = 10, shrapnel_direction, shrapnel_spread = 45, datum/ammo/shrapnel_type = /datum/ammo/bullet/shrapnel, datum/cause_data/cause_data, ignore_source_mob = FALSE, on_hit_coefficient = 0.15, def_zones = null)
 
 	epicenter = get_turf(epicenter)
 
@@ -31,6 +31,11 @@
 
 		var/obj/projectile/S = new(epicenter, cause_data)
 		S.generate_bullet(new shrapnel_type)
+
+		// limb targeted shrapnel
+		if(def_zones)
+			S.always_target_limb = TRUE
+			S.def_zone = pick(def_zones)
 
 		var/mob/source_mob = cause_data?.resolve_mob()
 		if(!(ignore_source_mob && mob_standing_on_turf == source_mob) && mob_standing_on_turf && prob(100*on_hit_coefficient)) //if a non-prone mob is on the same turf as the shrapnel explosion, some of the shrapnel hits him

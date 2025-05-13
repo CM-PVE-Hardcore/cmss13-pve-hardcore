@@ -101,6 +101,9 @@
 	/// Type of empty shell casing
 	var/shell_casing = null
 
+	// Multiplier to delimb chance
+	var/delimb_multiplier = 1
+
 /datum/ammo/New()
 	set_bullet_traits()
 

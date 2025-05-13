@@ -410,6 +410,18 @@
 	auto_open = TRUE
 	roundstart_template = /datum/map_template/shuttle/somme
 
+/obj/docking_port/stationary/marine_dropship/liberty_hanger_1
+	name = "Hangar Bay Aft"
+	id = LIBERTY_DROPSHIP_LZ1
+	auto_open = TRUE
+	roundstart_template = /datum/map_template/shuttle/somme
+
+/obj/docking_port/stationary/marine_dropship/liberty_hanger_2
+	name = "Hangar Bay Fore"
+	id = LIBERTY_DROPSHIP_LZ2
+	auto_open = TRUE
+	roundstart_template = /datum/map_template/shuttle/somme
+
 /obj/docking_port/stationary/marine_dropship/crash_site
 	auto_open = TRUE
 

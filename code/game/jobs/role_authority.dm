@@ -494,11 +494,17 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 			join_turf = get_turf(pick(GLOB.latejoin))
 		new_human.forceMove(join_turf)
 
-	for(var/cardinal in GLOB.cardinals)
-		var/obj/structure/machinery/cryopod/pod = locate() in get_step(new_human, cardinal)
-		if(pod)
-			pod.go_in_cryopod(new_human, silent = TRUE)
-			break
+	delete_single_use_landmarks(new_human.loc)
+
+	var/obj/structure/machinery/cryopod/pod = locate() in get_turf(new_human)
+	if (pod)
+		pod.go_in_cryopod(new_human, silent = TRUE)
+	else
+		for(var/cardinal in GLOB.cardinals)
+			pod = locate() in get_step(new_human, cardinal)
+			if(pod)
+				pod.go_in_cryopod(new_human, silent = TRUE)
+				break
 
 	new_human.sec_hud_set_ID()
 	new_human.hud_set_squad()
@@ -812,3 +818,14 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 			if(new_squad.num_tl >= new_squad.max_tl)
 				return TRUE
 	return FALSE
+
+// delete join/latejoin markers on a player spawn location if they are flagged as single_use = TRUE
+// this prevents multiple players spawning in the same location which can cause locker issues
+/proc/delete_single_use_landmarks(turf/target)
+	for(var/obj/effect/landmark/LM in target.contents)
+		var/obj/effect/landmark/late_join/LJ = LM
+		if(istype(LJ) && LJ.single_use)
+			qdel(LJ)
+		var/obj/effect/landmark/start/ST = LM
+		if(istype(ST) && ST.single_use)
+			qdel(ST)
