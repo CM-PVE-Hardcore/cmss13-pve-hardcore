@@ -37,3 +37,5 @@
 /datum/job/command/crew_chief/ai/get_total_positions(latejoin=0)
 	return latejoin ? total_positions : spawn_positions
 
+#undef SGT_VARIANT
+#undef SSGT_VARIANT

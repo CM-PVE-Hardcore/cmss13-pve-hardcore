@@ -572,13 +572,14 @@
 
 /obj/item/storage/belt/marine
 	name = "\improper M276 pattern ammo load rig"
-	desc = "The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations."
+	desc = "The M276 is the standard load-bearing equipment of the USCM. This variant is designed for bulk ammo-carrying operations. Includes clips and pouches for a knife, e-tool, canteen, gas mask, and compass."
 	icon_state = "marinebelt"
 	item_state = "marinebelt"
 	w_class = SIZE_LARGE
 	storage_slots = 5
 	max_w_class = SIZE_MEDIUM
 	max_storage_space = 20
+
 	can_hold = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/device/flashlight/flare,
@@ -591,14 +592,30 @@
 		/obj/item/explosive/grenade,
 		/obj/item/explosive/mine,
 		/obj/item/reagent_container/food/snacks,
-		/obj/item/ammo_magazine/plasma,
+		/obj/item/ammo_magazine/plasma
 	)
+
 	bypass_w_limit = list(
 		/obj/item/ammo_magazine/rifle,
 		/obj/item/ammo_magazine/smg,
-		/obj/item/ammo_magazine/plasma,
+		/obj/item/ammo_magazine/plasma
 	)
-	has_gamemode_skin = FALSE
+
+	var/list/obj/item/pouch_attachments = list()
+	var/list/obj/item/belt_attachments = list()
+	var/obj/item/knife_slot = null
+
+	var/list/attachable_items = list(
+		/obj/item/tool/shovel/etool,
+		/obj/item/weapon/throwing_knife,
+		/obj/item/weapon/swiss_army_knife,
+		/obj/item/weapon/straight_razor,
+		/obj/item/weapon/knife/marine,
+		/obj/item/attachable/bayonet,
+		/obj/item/reagent_container/food/drinks/flask,
+		/obj/item/clothing/mask/gas,
+		/obj/item/prop/helmetgarb/compass
+	)
 
 /obj/item/storage/belt/marine/standard
 	has_gamemode_skin = FALSE
@@ -625,6 +642,155 @@
 		dump_ammo_to(M,user, M.transfer_handful_amount)
 	else
 		return ..()
+
+/obj/item/storage/belt/marine/get_examine_text(mob/user)
+	. = ..()
+
+	if(knife_slot)
+		. += "[icon2html(knife_slot, user)] \A [knife_slot] is attached to it."
+
+	for(var/obj/item/pouch in pouch_attachments)
+		. += "[icon2html(pouch, user)] \A [pouch] is attached to it."
+
+	for(var/obj/item/attachment in belt_attachments)
+		. += "[icon2html(attachment, user)] \A [attachment] is attached to it."
+
+/obj/item/storage/belt/marine/get_examine_line(mob/user)
+	. = ..()
+
+	var/list/items = list()
+
+	if(knife_slot)
+		items += "\a [knife_slot.get_examine_line(user)]"
+
+	for(var/obj/item/item in pouch_attachments)
+		items += "\a [item.get_examine_line(user)]"
+
+	if(length(items))
+		. += " with [english_list(items)] attached"
+
+	if(length(belt_attachments))
+		. += ". <a href='byond://?src=\ref[src];list_acc=1'>\[See accessories\]</a>"
+
+/obj/item/storage/belt/marine/Topic(href, href_list)
+	. = ..()
+	if(.)
+		return
+	if(href_list["list_acc"])
+		if(length(belt_attachments))
+			var/list/obj/item/things = list()
+			if(knife_slot)
+				things += "[icon2html(knife_slot)] \a [knife_slot]"
+			for(var/obj/item/attachment in belt_attachments + pouch_attachments)
+				things += "[icon2html(attachment)] \a [attachment]"
+			to_chat(usr, "Attached to \the [src] are [english_list(things)].")
+		return
+
+/obj/item/storage/belt/marine/get_examine_text(mob/user)
+	. = ..()
+
+	. += SPAN_NOTICE("Attach items by holding <b>Ctrl</b> and clicking the belt with the item, detach by holding <b>Alt</b>.")
+
+/obj/item/storage/belt/marine/clicked(mob/user, list/mods)
+	if (mods["ctrl"])
+		var/obj/item/I = user.get_active_hand()
+		if (!I || !CAN_PICKUP(user, I))
+			return
+		if(!do_after(user, 1 SECONDS, INTERRUPT_ALL, BUSY_ICON_FRIENDLY, src, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
+			return
+		attach_item(user, I)
+		return TRUE
+
+	if (mods["alt"])
+		var/list/options = list()
+		options += belt_attachments
+		if (knife_slot)
+			options += knife_slot
+
+		if (!options.len)
+			to_chat(user, SPAN_NOTICE("There are no items attached to the belt."))
+			return
+
+		var/obj/item/selected = tgui_input_list(user, "Select an item to remove:", "Belt Attachments", options)
+		if (!selected)
+			return
+
+		if(!do_after(user, 1 SECONDS, INTERRUPT_ALL, BUSY_ICON_FRIENDLY, src, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
+			return
+
+		if (belt_attachments.Find(selected))
+			belt_attachments -= selected
+		else if (knife_slot == selected)
+			knife_slot = null
+
+		user.put_in_hands(selected)
+		to_chat(user, SPAN_NOTICE("You remove [selected.name] from the belt."))
+		update_icon()
+		return TRUE
+
+	return ..()
+
+/obj/item/storage/belt/marine/proc/attach_item(mob/living/user, obj/item/I)
+	if (!I || !istype(I, /obj/item))
+		return
+
+	if (!is_attachable(I))
+		to_chat(user, SPAN_WARNING("You can't attach that item to the belt."))
+		return
+
+	if (is_knife(I))
+		if (knife_slot)
+			to_chat(user, SPAN_WARNING("You already have a knife attached."))
+			return
+		knife_slot = I
+
+	else if (istype(I, /obj/item/tool/shovel/etool) || istype(I, /obj/item/reagent_container/food/drinks/flask) || istype(I, /obj/item/clothing/mask/gas) || istype(I, /obj/item/prop/helmetgarb/compass))
+		if (belt_attachments.Find(I))
+			to_chat(user, SPAN_WARNING("This item is already attached."))
+			return
+		belt_attachments += I
+
+	// Handle entrenching tool attachment
+	if (istype(I, /obj/item/tool/shovel/etool))
+		var/obj/item/tool/shovel/etool/etool_item = I  // Cast to etool type
+		if (!etool_item.folded)
+			to_chat(user, SPAN_WARNING("The entrenching tool must be folded before it can be attached."))
+			return
+
+	user.drop_held_item()
+	I.loc = null
+	to_chat(user, SPAN_NOTICE("You attach [I.name] to the belt."))
+	update_icon()
+
+/obj/item/storage/belt/marine/proc/is_attachable(obj/item/I)
+	for (var/x in attachable_items)
+		if (istype(I, x))
+			return TRUE
+	return FALSE
+
+/obj/item/storage/belt/marine/proc/is_knife(obj/item/I)
+	return istype(I, /obj/item/weapon/throwing_knife) || \
+		   istype(I, /obj/item/weapon/swiss_army_knife) || \
+		   istype(I, /obj/item/weapon/straight_razor) || \
+		   istype(I, /obj/item/weapon/knife/marine) || \
+		   istype(I, /obj/item/attachable/bayonet)
+
+/obj/item/storage/belt/marine/update_icon()
+	overlays.Cut()
+
+	if (knife_slot)
+		overlays += "+belt_knife"
+
+	for (var/obj/item/I in belt_attachments)
+		if (istype(I, /obj/item/tool/shovel/etool))
+			overlays += "+belt_shovel"
+		else if (istype(I, /obj/item/reagent_container/food/drinks/flask))
+			overlays += "+belt_flask"
+		else if (istype(I, /obj/item/clothing/mask/gas))
+			overlays += "+belt_gasmask"
+		else if (istype(I, /obj/item/prop/helmetgarb/compass))
+			overlays += "+belt_compass"
+
 
 /obj/item/storage/belt/marine/dutch
 	name = "ammo load rig"
