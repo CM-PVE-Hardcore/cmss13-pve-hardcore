@@ -272,7 +272,7 @@
 	name = "\improper Starboard Elevator Storage Deck"
 
 /area/liberty/vehicle_shuttle/s/two
-	name = "\improper Starboard Elevator Hanger Deck"
+	name = "\improper Starboard Elevator Hangar Deck"
 
 /area/liberty/vehicle_shuttle/s/three
 	name = "\improper Starboard Elevator Crew Deck"
@@ -287,7 +287,7 @@
 	name = "\improper Port Elevator Storage Deck"
 
 /area/liberty/vehicle_shuttle/n/two
-	name = "\improper Port Elevator Hanger Deck"
+	name = "\improper Port Elevator Hangar Deck"
 
 /area/liberty/vehicle_shuttle/n/three
 	name = "\improper Port Elevator Crew Deck"
