@@ -42,7 +42,7 @@
 "Kg" = (/turf/open/shuttle/dropship/can_surgery{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 5,13"},/area/shuttle/somme)
 "KF" = (/obj/structure/shuttle/part/somme{icon_state = "dropship_interior 7,10"},/turf/template_noop,/area/shuttle/somme{base_lighting_color = "#eb4034"; light_color = "#eb4034"})
 "Le" = (/obj/structure/machinery/cm_vending/sorted/medical/wall_med{pixel_y = 26; pixel_x = -8},/obj/structure/bed/chair/dropship/passenger{dir = 8},/obj/structure/machinery/camera/autoname/golden_arrow/somme{dir = 8},/turf/open/shuttle/dropship/can_surgery{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 7,16"},/area/shuttle/somme)
-"Ln" = (/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/ds4{id = "aft_door"; name = "\improper Somme cargo door"},/turf/open/shuttle/dropship/can_surgery{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 4,9"},/area/shuttle/somme)
+"Ln" = (/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/ds4{id = "aft_door"; name = "Somme cargo door"},/turf/open/shuttle/dropship/can_surgery{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 4,9"},/area/shuttle/somme)
 "LQ" = (/turf/closed/shuttle/dropship1{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 2,15"; name = "Somme"},/area/shuttle/somme)
 "MA" = (/turf/open/shuttle/dropship/can_surgery{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 4,9"},/area/shuttle/somme)
 "MJ" = (/turf/open/shuttle/dropship/can_surgery{icon = 'icons/turf/dropship5.dmi'; icon_state = "dropship_interior 6,13"},/area/shuttle/somme)

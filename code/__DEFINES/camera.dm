@@ -10,6 +10,7 @@
 #define CAMERA_NET_SAIPAN "Saipan"
 #define CAMERA_NET_MIDWAY "Midway"
 #define CAMERA_NET_SOMME "Somme"
+#define CAMERA_NET_BASTOGNE "Bastogne"
 #define CAMERA_NET_CYCLONE "Cyclone"
 #define CAMERA_NET_TORNADO "Tornado"
 #define CAMERA_NET_TYPHOON "Typhoon"

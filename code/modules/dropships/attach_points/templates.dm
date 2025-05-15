@@ -215,6 +215,52 @@
 	transverse  =  3
 	long    =  0
 
+// BASTOGNE
+/obj/effect/attach_point/weapon/bastogne
+	ship_tag = DROPSHIP_BASTOGNE
+	base_category = SOMME_DROPSHIP_WEAPON
+	icon = 'icons/turf/dropship5.dmi'
+
+/obj/effect/attach_point/weapon/bastogne/left_wing
+	name = "port wing weapon attach point"
+	icon_state = "dropship_interior 2,15"
+	attach_id = 1
+	dir = WEST
+	firing_arc_min = -3
+	firing_arc_max =  3
+	transverse  = -3
+	long    =  0
+
+/obj/effect/attach_point/weapon/bastogne/left_fore
+	name = "port fore weapon attach point"
+	icon_state = "dropship_interior 3,18"
+	attach_id = 2
+	dir = NORTH
+	firing_arc_min = -6
+	firing_arc_max =  0
+	transverse  =  0
+	long    =  0
+
+/obj/effect/attach_point/weapon/bastogne/right_fore
+	name = "starboard fore weapon attach point"
+	icon_state = "dropship_interior 7,18"
+	attach_id = 3
+	dir = NORTH
+	firing_arc_min =  0
+	firing_arc_max =  6
+	transverse  =  0
+	long    =  0
+
+/obj/effect/attach_point/weapon/bastogne/right_wing
+	name = "starboard wing weapon attach point"
+	icon_state = "dropship_interior 8,15";
+	attach_id = 4
+	dir = EAST
+	firing_arc_min = -3
+	firing_arc_max =  3
+	transverse  =  3
+	long    =  0
+
 // CYCLONE
 /obj/effect/attach_point/weapon/cyclone
 	ship_tag = DROPSHIP_CYCLONE
@@ -417,6 +463,9 @@
 /obj/effect/attach_point/crew_weapon/somme
 	ship_tag = DROPSHIP_SOMME
 
+/obj/effect/attach_point/crew_weapon/bastogne
+	ship_tag = DROPSHIP_BASTOGNE
+
 /obj/effect/attach_point/crew_weapon/cyclone
 	ship_tag = DROPSHIP_CYCLONE
 
@@ -443,6 +492,9 @@
 
 /obj/effect/attach_point/electronics/somme
 	ship_tag = DROPSHIP_SOMME
+
+/obj/effect/attach_point/electronics/bastogne
+	ship_tag = DROPSHIP_BASTOGNE
 
 /obj/effect/attach_point/electronics/dropship3
 	ship_tag = DROPSHIP_SAIPAN
@@ -478,6 +530,10 @@
 	icon_state = "somme_fuel_base"
 	ship_tag = DROPSHIP_SOMME
 
+/obj/effect/attach_point/fuel/bastogne
+	icon_state = "somme_fuel_base"
+	ship_tag = DROPSHIP_BASTOGNE
+
 /obj/effect/attach_point/fuel/dropship3
 	ship_tag = DROPSHIP_SAIPAN
 
@@ -507,6 +563,9 @@
 
 /obj/effect/attach_point/computer/somme
 	ship_tag = DROPSHIP_SOMME
+
+/obj/effect/attach_point/computer/bastogne
+	ship_tag = DROPSHIP_BASTOGNE
 
 /obj/effect/attach_point/computer/dropship3
 	ship_tag = DROPSHIP_SAIPAN
