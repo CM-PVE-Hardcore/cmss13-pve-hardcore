@@ -168,17 +168,37 @@
 	icon_state = "pressure_dark"
 
 /obj/item/clothing/head/helmet/space/pressure/uscm
-	name = "\improper USCM MK.35 pressure helmet"
+	name = "\improper USCM MK. 35 pressure helmet"
 	desc = "A heavy space helmet, designed to be coupled with the MK.35 pressure suit utilized by the United States Colonial Marines and a few other American or UA organizations. Feels like you could hotbox in here."
 	item_state = "pressure_uscm"
 	icon_state = "pressure_uscm"
 	helmet_color = "uscm"
+
+/obj/item/clothing/head/helmet/space/pressure/uscm/white
+	name = "\improper USCM MK.40 pressure helmet"
+	desc = "A heavy space helmet, designed to be coupled with the MK.40 pressure suit utilized by the United States Colonial Marines and a few other American or UA organizations. Feels like you could hotbox in here."
+	item_state = "pressure_white"
+	icon_state = "pressure_white"
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 
 /obj/item/clothing/suit/space/pressure/uscm
 	name = "\improper USCM MK.35 pressure suit"
 	desc = "A heavy, bulky military-grade space suit utilized by the United States Colonial Marines and a few other American or UA organizations."
 	item_state = "pressure_uscm"
 	icon_state = "pressure_uscm"
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	allowed = list(/obj/item/weapon/gun,/obj/item/weapon/baton,/obj/item/restraint/handcuffs,/obj/item/tank)
+	flags_inventory = SMARTGUN_HARNESS
+
+/obj/item/clothing/suit/space/pressure/uscm/white
+	name = "\improper USCM MK. 40 pressure suit"
+	desc = "A heavy, bulky military-grade space suit utilized by the United States Colonial Marines and a few other American or UA organizations."
+	item_state = "pressure_white"
+	icon_state = "pressure_white"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
