@@ -268,6 +268,10 @@
 	shuttle_tag = DROPSHIP_SOMME
 	dir = SOUTH
 
+/turf/open/space/transit/dropship/bastogne
+	shuttle_tag = DROPSHIP_BASTOGNE
+	dir = SOUTH
+
 /turf/open/space/transit/dropship/saipan
 	shuttle_tag = DROPSHIP_SAIPAN
 	dir = SOUTH

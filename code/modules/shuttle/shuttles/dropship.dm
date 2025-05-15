@@ -157,6 +157,18 @@
 /obj/docking_port/mobile/marine_dropship/somme/get_transit_path_type()
 	return /turf/open/space/transit/dropship/somme
 
+/obj/docking_port/mobile/marine_dropship/bastogne
+	name = "Bastogne"
+	id = DROPSHIP_BASTOGNE
+	width = 9
+	height = 18
+
+	dwidth = 4
+	dheight = 8
+
+/obj/docking_port/mobile/marine_dropship/bastogne/get_transit_path_type()
+	return /turf/open/space/transit/dropship/bastogne
+
 /obj/docking_port/mobile/marine_dropship/upp
 	name = "Akademia Nauk"
 	id = DROPSHIP_UPP
@@ -420,7 +432,7 @@
 	name = "Hangar Bay Fore"
 	id = LIBERTY_DROPSHIP_LZ2
 	auto_open = TRUE
-	roundstart_template = /datum/map_template/shuttle/somme
+	roundstart_template = /datum/map_template/shuttle/bastogne
 
 /obj/docking_port/stationary/marine_dropship/crash_site
 	auto_open = TRUE
@@ -455,6 +467,10 @@
 /datum/map_template/shuttle/somme
 	name = "Somme"
 	shuttle_id = DROPSHIP_SOMME
+
+/datum/map_template/shuttle/bastogne
+	name = "Bastogne"
+	shuttle_id = DROPSHIP_BASTOGNE
 
 /datum/map_template/shuttle/alamo
 	name = "Alamo"

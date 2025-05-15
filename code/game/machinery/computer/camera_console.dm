@@ -406,8 +406,12 @@
 	network = list(CAMERA_NET_MIDWAY, CAMERA_NET_LASER_TARGETS)
 
 /obj/structure/machinery/computer/cameras/dropship/somme
-	name = "\improper 'Midway' camera controls"
-	network = list(CAMERA_NET_MIDWAY, CAMERA_NET_LASER_TARGETS)
+	name = "\improper 'Somme' camera controls"
+	network = list(CAMERA_NET_SOMME, CAMERA_NET_LASER_TARGETS)
+
+/obj/structure/machinery/computer/cameras/dropship/bastogne
+	name = "\improper 'Bastogne' camera controls"
+	network = list(CAMERA_NET_BASTOGNE, CAMERA_NET_LASER_TARGETS)
 
 /obj/structure/machinery/computer/cameras/dropship/cyclone
 	name = "\improper 'Cyclone' camera controls"
