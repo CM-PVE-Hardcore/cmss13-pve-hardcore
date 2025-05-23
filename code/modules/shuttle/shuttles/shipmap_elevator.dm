@@ -80,6 +80,7 @@
 	dir = NORTH
 	height = 5
 	width = 5
+	rechargeTime = 15 SECONDS
 
 /obj/docking_port/mobile/trijent_elevator/shipmap_elevator/liberty/s
 	name = "Vehicle Elevator Starboard"

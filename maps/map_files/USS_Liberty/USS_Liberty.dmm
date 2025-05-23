@@ -216,7 +216,8 @@
 	id = "LibertyElevatorN3";
 	elevator_network = "LibertyElevatorN";
 	name = "Crew Deck";
-	airlock_area = /area/liberty/vehicle_shuttle/n/three
+	airlock_area = /area/liberty/vehicle_shuttle/n/three;
+	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/north
 	},
 /turf/open/floor/almayer/empty/golden_arrow/vehicle_two,
 /area/liberty/vehicle_shuttle/n/three)
@@ -426,7 +427,8 @@
 	airlock_area = /area/liberty/vehicle_shuttle/s/three;
 	name = "Crew Deck";
 	id = "LibertyElevatorS3";
-	elevator_network = "LibertyElevatorS"
+	elevator_network = "LibertyElevatorS";
+	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/south
 	},
 /turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
 /area/liberty/vehicle_shuttle/s/three)
@@ -858,6 +860,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/liberty/crew_deck/auxillary_hypersleep)
+"aNo" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/liberty/vehicle_shuttle/s/three)
 "aNN" = (
 /turf/open/floor/podhatchfloor/north,
 /area/liberty/hangar_deck/engineering)
@@ -2315,7 +2324,10 @@
 /turf/open/floor/almayer,
 /area/liberty/cargo_deck/motor_pool)
 "cas" = (
-/obj/structure/machinery/door/airlock/multi_tile/elevator,
+/obj/structure/machinery/door/airlock/multi_tile/elevator/freight{
+	icon_state = "door_locked";
+	locked = 1
+	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/liberty/vehicle_shuttle/n/one)
 "caE" = (
@@ -3035,6 +3047,13 @@
 	},
 /turf/open/floor/almayer,
 /area/liberty/hangar_deck/hangar_bay)
+"cKr" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_two,
+/area/liberty/vehicle_shuttle/n/three)
 "cKL" = (
 /obj/structure/surface/rack,
 /obj/item/tool/dumbbell{
@@ -6917,8 +6936,7 @@
 	id = "LibertyElevatorN1";
 	elevator_network = "LibertyElevatorN";
 	name = "Storage Deck";
-	airlock_area = /area/liberty/vehicle_shuttle/n/one;
-	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/north
+	airlock_area = /area/liberty/vehicle_shuttle/n/one
 	},
 /turf/open/floor/plating,
 /area/liberty/vehicle_shuttle/n/one)
@@ -9069,6 +9087,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/liberty/crew_deck/engineering)
+"iaT" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_two,
+/area/liberty/vehicle_shuttle/n/two)
 "ibi" = (
 /obj/structure/closet/secure_closet/cmdcabinet{
 	pixel_y = 24
@@ -13173,6 +13198,13 @@
 "lkP" = (
 /turf/open/floor/prison/whitegreenfull,
 /area/liberty/crew_deck/medbay)
+"lkZ" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/liberty/vehicle_shuttle/s/four)
 "llE" = (
 /obj/structure/machinery/big_computers/computerblack/computer3,
 /obj/structure/prop/hybrisa/misc/machinery/screens/bluemultimonitormedium_on{
@@ -17192,6 +17224,13 @@
 "oIl" = (
 /turf/closed/wall/almayer/cargo_hull,
 /area/liberty/cargo_deck/cargo)
+"oJt" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_two,
+/area/liberty/vehicle_shuttle/n/four)
 "oJU" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/almayer/edge/smooth/east{
@@ -17402,10 +17441,7 @@
 /turf/open/floor/white,
 /area/liberty/crew_deck/auxillary_hypersleep)
 "oTg" = (
-/obj/structure/machinery/door/airlock/multi_tile/elevator/freight{
-	icon_state = "door_locked";
-	locked = 1
-	},
+/obj/structure/machinery/door/airlock/multi_tile/elevator,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/liberty/vehicle_shuttle/n/three)
 "oTs" = (
@@ -18667,8 +18703,7 @@
 	airlock_area = /area/liberty/vehicle_shuttle/s/one;
 	name = "Storage Deck";
 	id = "LibertyElevatorS1";
-	elevator_network = "LibertyElevatorS";
-	roundstart_template = /datum/map_template/shuttle/trijent_elevator/liberty/south
+	elevator_network = "LibertyElevatorS"
 	},
 /turf/open/floor/plating,
 /area/liberty/vehicle_shuttle/s/one)
@@ -20896,7 +20931,10 @@
 	},
 /area/liberty/hangar_deck/cargo)
 "rEw" = (
-/obj/structure/machinery/door/airlock/multi_tile/elevator,
+/obj/structure/machinery/door/airlock/multi_tile/elevator/freight{
+	icon_state = "door_locked";
+	locked = 1
+	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/liberty/vehicle_shuttle/s/one)
 "rEA" = (
@@ -21762,6 +21800,13 @@
 	},
 /turf/open/floor/almayer,
 /area/liberty/command_deck/bridge)
+"szt" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/empty/golden_arrow/vehicle_one,
+/area/liberty/vehicle_shuttle/s/two)
 "sAq" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -22620,10 +22665,7 @@
 /turf/open/floor/almayer/plate,
 /area/liberty/crew_deck/fitness_room)
 "tdM" = (
-/obj/structure/machinery/door/airlock/multi_tile/elevator/freight{
-	icon_state = "door_locked";
-	locked = 1
-	},
+/obj/structure/machinery/door/airlock/multi_tile/elevator,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/liberty/vehicle_shuttle/s/three)
 "tdO" = (
@@ -22895,6 +22937,13 @@
 	},
 /turf/open/floor/almayer,
 /area/liberty/crew_deck/east_hall)
+"tpT" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/plating,
+/area/liberty/vehicle_shuttle/s/one)
 "tpZ" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4
@@ -23278,6 +23327,13 @@
 	dir = 9
 	},
 /area/liberty/hangar_deck/section_1_armory)
+"tFq" = (
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/plating,
+/area/liberty/vehicle_shuttle/n/one)
 "tFE" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -43699,7 +43755,7 @@ lhZ
 lhZ
 lhZ
 lhZ
-aHV
+wbR
 wbR
 ili
 nhi
@@ -61238,7 +61294,7 @@ kAE
 mlN
 hLV
 hLV
-hLV
+oJt
 hLV
 hLV
 vop
@@ -61250,7 +61306,7 @@ thH
 rxs
 dql
 dql
-dql
+lkZ
 dql
 dql
 cTS
@@ -61306,7 +61362,7 @@ fdq
 tgR
 mFy
 mFy
-mFy
+cKr
 mFy
 mFy
 xJW
@@ -61318,7 +61374,7 @@ tEQ
 prv
 wDl
 wDl
-wDl
+aNo
 wDl
 wDl
 qJF
@@ -61374,7 +61430,7 @@ kiX
 tUG
 agw
 agw
-agw
+iaT
 agw
 agw
 vuF
@@ -61386,7 +61442,7 @@ oTt
 gge
 rbJ
 rbJ
-rbJ
+szt
 rbJ
 rbJ
 npT
@@ -61442,7 +61498,7 @@ lOt
 rZY
 wXL
 wXL
-wXL
+tFq
 wXL
 wXL
 aWl
@@ -61454,7 +61510,7 @@ wgR
 gXR
 xJU
 xJU
-xJU
+tpT
 xJU
 xJU
 vIr
