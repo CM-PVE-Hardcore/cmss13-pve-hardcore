@@ -135,3 +135,22 @@
 #define SCAPE_PL_LV759_DEEPCAVES list('sound/soundscape/lv759/outdoors/deepcave1.ogg','sound/soundscape/lv759/outdoors/deepcave2.ogg')
 #define SCAPE_PL_LV759_CAVES list('sound/soundscape/lv759/outdoors/windy_caverns_1.ogg','sound/soundscape/lv759/outdoors/windy_caverns_2.ogg','sound/soundscape/lv759/outdoors/windy_caverns_3.ogg',)
 #define SCAPE_PL_LV759_PLATEAU_OUTDOORS list('sound/soundscape/lv759/outdoors/derelict_plateau_1.ogg','sound/soundscape/lv759/outdoors/derelict_plateau_2.ogg',)
+
+// Station Soundscapes
+#define SCAPE_STATION_GENERIC list('sound/ambience/ambigen1.ogg','sound/ambience/ambigen3.ogg',\
+								'sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg',\
+								'sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg',\
+								'sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg',\
+								'sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg',\
+								'sound/ambience/ambigen12.ogg','sound/ambience/ambigen14.ogg','sound/ambience/ambigen15.ogg')
+#define SCAPE_STATION_HOLY list('sound/ambience/ambicha1.ogg','sound/ambience/ambicha2.ogg','sound/ambience/ambicha3.ogg',\
+										'sound/ambience/ambicha4.ogg', 'sound/ambience/ambiholy.ogg', 'sound/ambience/ambiholy2.ogg',\
+										'sound/ambience/ambiholy3.ogg')
+#define SCAPE_STATION_HIGHSEC list('sound/ambience/ambidanger.ogg', 'sound/ambience/ambidanger2.ogg')
+#define SCAPE_STATION_ENGINEERING list('sound/ambience/ambisin1.ogg','sound/ambience/ambisin2.ogg','sound/ambience/ambisin3.ogg','sound/ambience/ambisin4.ogg',\
+										'sound/ambience/ambiatmos.ogg', 'sound/ambience/ambiatmos2.ogg', 'sound/ambience/ambitech.ogg', 'sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg')
+#define SCAPE_STATION_MEDICAL list('sound/ambience/ambinice.ogg')
+#define SCAPE_STATION_SPOOKY list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
+#define SCAPE_STATION_MAINTENANCE list('sound/ambience/ambimaint1.ogg', 'sound/ambience/ambimaint2.ogg', 'sound/ambience/ambimaint3.ogg', 'sound/ambience/ambimaint4.ogg',\
+											'sound/ambience/ambimaint5.ogg', 'sound/voice/lowHiss2.ogg', 'sound/voice/lowHiss3.ogg', 'sound/voice/lowHiss4.ogg', 'sound/ambience/ambitech2.ogg' )
+

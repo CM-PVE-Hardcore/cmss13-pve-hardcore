@@ -180,6 +180,12 @@
 	html_link = "images/5/54/USS_Almayer.png"
 	color = "cyan"
 
+/obj/item/map/deltastation
+	name = "\improper Research Station Delta map"
+	desc = "A labeled blueprint of the Research Station Delta"
+	html_link = ""
+	color = "#777777"
+
 GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 
 /proc/setup_all_maps()
@@ -215,7 +221,8 @@ GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 		MAP_CALLIOPE_DESERT_BUS = new /obj/item/map/big_red_map(),
 		MAP_LV_671 = new /obj/item/map/lv_671(),
 		MAP_OIL_DEPOT = new /obj/item/map/oil_depot(),
-		MAP_DERELICT_ALMAYER_INFESTED = new /obj/item/map/almayer/infested()
+		MAP_DERELICT_ALMAYER_INFESTED = new /obj/item/map/almayer/infested(),
+		MAP_DELTASTATION = new /obj/item/map/deltastation()
 	)
 
 //used by marine equipment machines to spawn the correct map.
