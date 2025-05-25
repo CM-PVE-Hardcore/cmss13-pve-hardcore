@@ -356,7 +356,6 @@
 	dwidth = 1;
 	height = 4;
 	name = "escape pod loader";
-	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
 	width = 3
 	},
 /obj/structure/fans/tiny/invisible,
@@ -626,8 +625,7 @@
 	height = 17;
 	id = "arrivals_stationary";
 	name = "delta arrivals";
-	width = 9;
-	roundstart_template = /datum/map_template/shuttle/arrival/delta
+	width = 9
 	},
 /turf/open/space/basic,
 /area/space)
@@ -2326,9 +2324,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/fore)
 "aiX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3137,9 +3133,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/fore)
 "akp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3371,9 +3365,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/fore)
 "akT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3910,9 +3902,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/fore)
 "alX" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -4436,9 +4426,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/fore)
 "amX" = (
 /obj/structure/cable/yellow{
@@ -7068,9 +7056,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/fore)
 "arI" = (
 /obj/structure/cable/yellow{
@@ -7670,9 +7656,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/fore)
 "asO" = (
 /obj/structure/cable/yellow{
@@ -10060,9 +10044,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/auxiliary)
 "awK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10072,9 +10054,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/auxiliary)
 "awL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10094,9 +10074,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/auxiliary)
 "awN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10109,9 +10087,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/auxiliary)
 "awO" = (
 /obj/structure/cable/yellow{
@@ -13281,9 +13257,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/fore)
 "aCJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28047,7 +28021,6 @@
 	},
 /turf/open/floor/plating{
 	luminosity = 2;
-	initial_gas_mix = "o2=0.01;n2=0.01";
 	temperature = 2.7
 	},
 /area/deltastation/security/prison)
@@ -28945,7 +28918,6 @@
 	dwidth = 1;
 	height = 4;
 	name = "escape pod loader";
-	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
 	width = 3
 	},
 /obj/structure/fans/tiny/invisible,
@@ -29778,7 +29750,6 @@
 	},
 /turf/open/floor/plating{
 	luminosity = 2;
-	initial_gas_mix = "o2=0.01;n2=0.01";
 	temperature = 2.7
 	},
 /area/deltastation/security/prison)
@@ -32068,8 +32039,7 @@
 	height = 5;
 	id = "mining_home";
 	name = "mining shuttle bay";
-	width = 7;
-	roundstart_template = /datum/map_template/shuttle/mining/delta
+	width = 7
 	},
 /turf/open/space/basic,
 /area/space)
@@ -37913,9 +37883,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/fore)
 "bqu" = (
 /obj/structure/cable/yellow{
@@ -43986,8 +43954,7 @@
 	height = 5;
 	id = "laborcamp_home";
 	name = "fore bay 1";
-	width = 9;
-	roundstart_template = /datum/map_template/shuttle/labour/delta
+	width = 9
 	},
 /turf/open/space/basic,
 /area/space)
@@ -44571,9 +44538,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/engine/storage_shared)
 "bAU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -45832,9 +45797,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/engine/storage_shared)
 "bCP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -47415,9 +47378,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/engine/storage_shared)
 "bEE" = (
 /obj/structure/cable/yellow{
@@ -48549,9 +48510,7 @@
 	},
 /obj/machinery/vending/tool,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/engine/storage_shared)
 "bGj" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -48562,9 +48521,7 @@
 	},
 /obj/structure/closet/toolcloset,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/engine/storage_shared)
 "bGk" = (
 /obj/machinery/camera{
@@ -52280,9 +52237,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bLP" = (
 /obj/structure/cable/yellow{
@@ -53757,9 +53712,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bNT" = (
 /obj/structure/cable/yellow{
@@ -55023,9 +54976,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bPV" = (
 /obj/structure/cable/yellow{
@@ -56237,9 +56188,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bSc" = (
 /obj/structure/cable/yellow{
@@ -57497,9 +57446,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bTT" = (
 /obj/structure/cable/yellow{
@@ -59202,9 +59149,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bWi" = (
 /obj/structure/cable/yellow{
@@ -59216,9 +59161,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/chief)
 "bWj" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -69768,9 +69711,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/security/courtroom)
 "cmU" = (
 /obj/structure/surface/table/woodentable/fancy,
@@ -73188,9 +73129,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "csV" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -73251,9 +73190,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard)
 "ctb" = (
 /obj/structure/cable/yellow{
@@ -74780,9 +74717,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/hallway/primary/central)
 "cvL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -75117,9 +75052,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cwk" = (
 /obj/structure/closet/masks,
@@ -75845,9 +75778,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard)
 "cxu" = (
 /obj/structure/cable/yellow{
@@ -76638,9 +76569,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/hallway/primary/central)
 "cyN" = (
 /obj/machinery/light,
@@ -76653,9 +76582,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/hallway/primary/central)
 "cyO" = (
 /obj/structure/machinery/door/firedoor,
@@ -76689,9 +76616,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "cyQ" = (
 /obj/machinery/holopad,
@@ -76932,9 +76857,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "czk" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -77129,9 +77052,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "czC" = (
 /obj/machinery/light{
@@ -77588,9 +77509,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "cAp" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -77764,9 +77683,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cAB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -78431,9 +78348,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/restrooms)
 "cBJ" = (
 /obj/machinery/shower{
@@ -78563,9 +78478,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "cBT" = (
 /obj/structure/cable/yellow{
@@ -78863,9 +78776,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cCn" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -79149,9 +79060,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/vacant_room/commissary)
 "cCO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -79161,9 +79070,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cCP" = (
 /turf/closed/wall/biodome,
@@ -79640,9 +79547,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "cDz" = (
 /obj/structure/cable/yellow{
@@ -80608,9 +80513,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/restrooms)
 "cFi" = (
 /obj/structure/cable/yellow{
@@ -80622,9 +80525,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/restrooms)
 "cFj" = (
 /obj/machinery/status_display/evac{
@@ -80639,9 +80540,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/restrooms)
 "cFk" = (
 /obj/structure/cable/yellow{
@@ -80704,9 +80603,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "cFp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -80715,9 +80612,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/locker)
 "cFq" = (
 /obj/machinery/light,
@@ -81461,9 +81356,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/toilet/restrooms)
 "cGK" = (
 /obj/structure/machinery/door/airlock/almayer{
@@ -82621,9 +82514,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cIW" = (
 /turf/open/floor/plating,
@@ -82724,9 +82615,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cJh" = (
 /obj/structure/cable/yellow{
@@ -82824,9 +82713,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cJo" = (
 /obj/structure/cable/yellow{
@@ -83070,9 +82957,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cJG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -83089,9 +82974,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cJH" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -83144,9 +83027,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJL" = (
 /obj/structure/girder,
@@ -83173,9 +83054,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83190,9 +83069,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83205,9 +83082,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -83219,9 +83094,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83237,9 +83110,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83284,9 +83155,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJV" = (
 /obj/structure/cable/yellow{
@@ -83301,9 +83170,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83334,9 +83201,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cJY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83400,9 +83265,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cKc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -83579,9 +83442,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "cKo" = (
 /obj/structure/cable/yellow{
@@ -84303,9 +84164,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cLp" = (
 /obj/structure/chair/office/light{
@@ -84895,9 +84754,7 @@
 	dir = 8
 	},
 /obj/machinery/light,
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cMs" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -84958,9 +84815,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cMw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -84972,9 +84827,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cMx" = (
 /obj/machinery/light,
@@ -85009,9 +84862,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cMz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -85024,9 +84875,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/dorms)
 "cMA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -85162,9 +85011,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "cMK" = (
 /obj/machinery/holopad,
@@ -85615,9 +85462,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cNH" = (
 /obj/effect/landmark/event_spawn,
@@ -86525,9 +86370,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cPA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -86619,9 +86462,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/medical/storage)
 "cPH" = (
 /obj/structure/cable/yellow{
@@ -88673,9 +88514,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/medical/storage)
 "cSX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -89790,9 +89629,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/medical/storage)
 "cUP" = (
 /obj/structure/toilet{
@@ -90864,9 +90701,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/medical/storage)
 "cWz" = (
 /obj/structure/machinery/door/firedoor,
@@ -91847,9 +91682,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cYi" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -91862,9 +91695,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cYj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -91876,9 +91707,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cYk" = (
 /obj/effect/decal/cleanable/dirt,
@@ -91901,9 +91730,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cYm" = (
 /obj/structure/girder,
@@ -91926,9 +91753,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cYo" = (
 /obj/effect/decal/cleanable/dirt,
@@ -91941,9 +91766,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "cYp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -94103,9 +93926,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbQ" = (
 /obj/effect/landmark/blobstart,
@@ -94118,9 +93939,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -94133,9 +93952,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbS" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
@@ -94154,9 +93971,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -94171,9 +93986,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -94204,9 +94017,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -94221,9 +94032,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dbY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -94251,9 +94060,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dca" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -95150,9 +94957,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/fitness/recreation)
 "ddx" = (
 /obj/machinery/light,
@@ -105166,9 +104971,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dvx" = (
 /obj/structure/cable/yellow{
@@ -106166,9 +105969,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dxe" = (
 /obj/structure/machinery/door/airlock/almayer/command{
@@ -107024,9 +106825,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dyD" = (
 /obj/structure/surface/table,
@@ -107948,9 +107747,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dAg" = (
 /obj/item/radio/intercom{
@@ -108618,9 +108415,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dBn" = (
 /obj/structure/cable/yellow{
@@ -108735,9 +108530,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dBv" = (
 /obj/structure/cable/yellow{
@@ -108753,9 +108546,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dBw" = (
 /obj/structure/cable/yellow{
@@ -108811,9 +108602,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dBB" = (
 /obj/structure/cable/yellow{
@@ -108828,9 +108617,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dBC" = (
 /obj/structure/cable/yellow{
@@ -108863,9 +108650,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dBE" = (
 /obj/structure/cable/yellow{
@@ -109396,9 +109181,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dCL" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -110194,9 +109977,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/crew_quarters/heads/cmo)
 "dEb" = (
 /obj/structure/window/framed/corsat,
@@ -110332,9 +110113,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port)
 "dEp" = (
 /obj/structure/closet,
@@ -111948,9 +111727,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/science/misc_lab)
 "dHb" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -112811,9 +112588,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/science/misc_lab)
 "dIt" = (
 /obj/structure/machinery/door/firedoor,
@@ -114224,9 +113999,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dKM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -114256,9 +114029,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dKP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -114418,9 +114189,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/aft)
 "dLa" = (
 /obj/structure/cable/yellow{
@@ -114438,9 +114207,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/aft)
 "dLb" = (
 /obj/structure/cable/yellow{
@@ -114507,9 +114274,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/aft)
 "dLf" = (
 /obj/structure/cable/yellow{
@@ -114526,9 +114291,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/aft)
 "dLg" = (
 /obj/structure/cable/yellow{
@@ -114636,9 +114399,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dLo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -114651,9 +114412,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dLp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -114666,9 +114425,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/starboard/aft)
 "dLq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -114885,9 +114642,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dLS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -114897,9 +114652,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dLT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -115058,9 +114811,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dMi" = (
 /obj/structure/cable/yellow{
@@ -115893,9 +115644,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/science/research)
 "dNF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -116173,9 +115922,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dOf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -116330,9 +116077,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/science/research)
 "dOt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -116642,9 +116387,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dOS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -116676,9 +116419,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/science/research)
 "dOW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -117041,9 +116782,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dPG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -118369,9 +118108,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dRJ" = (
 /obj/structure/cable/yellow{
@@ -118384,9 +118121,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dRK" = (
 /obj/structure/cable/yellow{
@@ -118825,9 +118560,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dSy" = (
 /obj/effect/decal/cleanable/dirt,
@@ -120318,9 +120051,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dVM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -120797,9 +120528,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dWJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -122050,9 +121779,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dZg" = (
 /obj/structure/girder,
@@ -122302,9 +122029,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dZJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -122317,9 +122042,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dZK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -122333,9 +122056,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/maintenance/port/aft)
 "dZL" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -127091,7 +126812,6 @@
 	height = 9;
 	id = "aux_base_zone";
 	name = "aux base zone";
-	roundstart_template = /datum/map_template/shuttle/aux_base/default;
 	width = 9
 	},
 /turf/open/floor/plating,
@@ -127608,9 +127328,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/corsat/retrosquareslight{
-	heat_capacity = 1e+006
-	},
+/turf/open/floor/corsat/retrosquareslight,
 /area/deltastation/vacant_room/commissary)
 "pCE" = (
 /obj/structure/cable/yellow{
