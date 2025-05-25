@@ -28018,10 +28018,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plating{
-	luminosity = 2;
-	temperature = 2.7
-	},
+/turf/open/floor/plating,
 /area/deltastation/security/prison)
 "aZP" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/carbon_input{
@@ -29747,10 +29744,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plating{
-	luminosity = 2;
-	temperature = 2.7
-	},
+/turf/open/floor/plating,
 /area/deltastation/security/prison)
 "bcX" = (
 /turf/open/floor/corsat/plate,
@@ -120276,6 +120270,7 @@
 	codes_txt = "patrol;next_patrol=hall8";
 	location = "hall7"
 	},
+/obj/effect/landmark/railgun_camera_pos,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
