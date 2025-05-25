@@ -307,10 +307,10 @@
 /turf/open/floor/plating,
 /area/deltastation/hallway/secondary/entry)
 "aaP" = (
-/turf/closed/wall/biodome/mineral/plastitanium,
+/turf/closed/wall/biodome,
 /area/deltastation/hallway/secondary/entry)
 "aaS" = (
-/turf/closed/wall/biodome/mineral/plastitanium,
+/turf/closed/wall/biodome,
 /area/deltastation/construction/mining/aux_base)
 "abe" = (
 /obj/effect/turf_decal/delivery,
@@ -26702,7 +26702,6 @@
 	},
 /obj/structure/machinery/door/firedoor,
 /obj/structure/machinery/door/airlock/almayer/security{
-	aiControlDisabled = 1;
 	name = "Education Chamber";
 	req_access_txt = "3"
 	},
@@ -26747,7 +26746,7 @@
 /turf/open/floor/plating,
 /area/deltastation/security/prison)
 "aXU" = (
-/turf/closed/wall/biodome/mineral/plastitanium,
+/turf/closed/wall/biodome,
 /area/deltastation/security/prison)
 "aXV" = (
 /obj/machinery/light/small{
@@ -81160,15 +81159,6 @@
 	icon_state = "1-2"
 	},
 /obj/item/folder/blue,
-/obj/item/clothing/under/rank/centcom_commander{
-	desc = "A replica of a jumpsuit worn by the highest ranking commanders under Nanotrasen's central command.";
-	name = "Replica CentCom officer's jumpsuit"
-	},
-/obj/item/clothing/head/centhat{
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0);
-	desc = "A replica hat of a Central Commander's attire. It has a small tag on it saying, 'It's good to be emperor.'";
-	name = "Replica CentCom hat"
-	},
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_x = -32
 	},
@@ -81240,11 +81230,6 @@
 	},
 /obj/item/folder/red,
 /obj/item/toy/gun,
-/obj/item/clothing/head/beret/sec{
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0);
-	desc = "A replica beret resembling that of a special operations officer under Nanotrasen.";
-	name = "replica officer's beret"
-	},
 /obj/item/radio/intercom{
 	pixel_x = 26
 	},
@@ -114532,7 +114517,7 @@
 /turf/open/space,
 /area/deltastation/solar/starboard/aft)
 "dLC" = (
-/turf/closed/indestructible/opshuttle,
+/turf/closed/wall/biodome,
 /area/deltastation/science/test_area)
 "dLD" = (
 /obj/item/target,

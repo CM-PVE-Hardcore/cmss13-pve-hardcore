@@ -311,6 +311,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Recreation Area"
 	icon_state = "fitness"
 
+/area/deltastation/holodeck
+	name = "Holodeck"
+	icon_state = "fitness"
+
+/area/deltastation/holodeck/rec_center
+	name = "Holodeck Recreation Center"
+	icon_state = "fitness"
+
 /area/deltastation/crew_quarters/cafeteria
 	name = "Cafeteria"
 	icon_state = "cafeteria"
