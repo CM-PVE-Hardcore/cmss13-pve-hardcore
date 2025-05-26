@@ -1,9 +1,9 @@
 {
     "map_name": "Research Station Delta",
-    "map_path": "map_files/deltastation",
-    "map_file": "deltastation.dmm",
-    "map_item_type": "/obj/item/map/deltastation",
-    "announce_text": "An automated distress signal has been received from Weyland-Yutani \"Research Facility Delta\". A response team from the ###SHIPNAME### will be dispatched shortly to investigate.",
+    "map_path": "map_files/station",
+    "map_file": "delta.dmm",
+    "map_item_type": "/obj/item/map/station/delta",
+    "announce_text": "An automated distress signal has been received from Weyland-Yutani \"Research Station Delta\". A response team from the ###SHIPNAME### will be dispatched shortly to investigate.",
     "environment_traits": { "InSpace": true },
     "monkey_types": [
         "monkey"

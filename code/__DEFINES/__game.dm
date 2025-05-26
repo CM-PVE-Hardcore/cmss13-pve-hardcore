@@ -51,7 +51,11 @@
 #define MAP_LV_671 "LV-671 Ark Borealis"
 #define MAP_OIL_DEPOT "Oil Depot"
 #define MAP_DERELICT_ALMAYER_INFESTED "Infested Almayer"
-#define MAP_DELTASTATION "Research Station Delta"
+#define MAP_STATION_BETA "Research Station Beta"
+#define MAP_STATION_DELTA "Research Station Delta"
+#define MAP_STATION_MU "Research Station Mu"
+#define MAP_STATION_PHI "Research Station Phi"
+#define MAP_STATION_THETA "Research Station Theta"
 
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
