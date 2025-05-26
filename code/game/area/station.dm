@@ -1,7 +1,7 @@
 /*
 ### This file contains a list of all the areas in your station. Format is as follows:
 
-/area/deltastation/CATEGORY/OR/DESCRIPTOR/NAME 	(you can make as many subdivisions as you want)
+/area/station/CATEGORY/OR/DESCRIPTOR/NAME 	(you can make as many subdivisions as you want)
 	name = "NICE NAME" 				(not required but makes things really nice)
 	icon = 'ICON FILENAME' 			(defaults to 'icons/turf/areas.dmi')
 	icon_state = "NAME OF ICON" 	(defaults to "unknown" (blank))
@@ -11,994 +11,994 @@
 NOTE: there are two lists of areas in the end of this file: centcom and station itself. Please maintain these lists valid. --rastaf0
 */
 
-/area/deltastation
-	icon = 'icons/turf/area_deltastation.dmi'
+/area/station
+	icon = 'icons/turf/area_station.dmi'
 	soundscape_playlist = SCAPE_STATION_GENERIC
 
 //Maintenance
 
-/area/deltastation/maintenance
+/area/station/maintenance
 	soundscape_playlist = SCAPE_STATION_MAINTENANCE
 
 //Departments
 
-/area/deltastation/maintenance/department/chapel
+/area/station/maintenance/department/chapel
 	name = "Chapel Maintenance"
 	icon_state = "maint_chapel"
 
-/area/deltastation/maintenance/department/chapel/monastery
+/area/station/maintenance/department/chapel/monastery
 	name = "Monastery Maintenance"
 	icon_state = "maint_monastery"
 
-/area/deltastation/maintenance/department/crew_quarters/bar
+/area/station/maintenance/department/crew_quarters/bar
 	name = "Bar Maintenance"
 	icon_state = "maint_bar"
 
-/area/deltastation/maintenance/department/crew_quarters/dorms
+/area/station/maintenance/department/crew_quarters/dorms
 	name = "Dormitory Maintenance"
 	icon_state = "maint_dorms"
 
-/area/deltastation/maintenance/department/eva
+/area/station/maintenance/department/eva
 	name = "EVA Maintenance"
 	icon_state = "maint_eva"
 
-/area/deltastation/maintenance/department/electrical
+/area/station/maintenance/department/electrical
 	name = "Electrical Maintenance"
 	icon_state = "maint_electrical"
 
-/area/deltastation/maintenance/department/engine/atmos
+/area/station/maintenance/department/engine/atmos
 	name = "Atmospherics Maintenance"
 	icon_state = "maint_atmos"
 
-/area/deltastation/maintenance/department/security
+/area/station/maintenance/department/security
 	name = "Security Maintenance"
 	icon_state = "maint_sec"
 
-/area/deltastation/maintenance/department/security/brig
+/area/station/maintenance/department/security/brig
 	name = "Brig Maintenance"
 	icon_state = "maint_brig"
 
-/area/deltastation/maintenance/department/medical
+/area/station/maintenance/department/medical
 	name = "Medbay Maintenance"
 	icon_state = "medbay_maint"
 
-/area/deltastation/maintenance/department/medical/central
+/area/station/maintenance/department/medical/central
 	name = "Central Medbay Maintenance"
 	icon_state = "medbay_maint_central"
 
-/area/deltastation/maintenance/department/medical/morgue
+/area/station/maintenance/department/medical/morgue
 	name = "Morgue Maintenance"
 	icon_state = "morgue_maint"
 
-/area/deltastation/maintenance/department/science
+/area/station/maintenance/department/science
 	name = "Science Maintenance"
 	icon_state = "maint_sci"
 
-/area/deltastation/maintenance/department/science/central
+/area/station/maintenance/department/science/central
 	name = "Central Science Maintenance"
 	icon_state = "maint_sci_central"
 
-/area/deltastation/maintenance/department/cargo
+/area/station/maintenance/department/cargo
 	name = "Cargo Maintenance"
 	icon_state = "maint_cargo"
 
-/area/deltastation/maintenance/department/bridge
+/area/station/maintenance/department/bridge
 	name = "Bridge Maintenance"
 	icon_state = "maint_bridge"
 
-/area/deltastation/maintenance/department/engine
+/area/station/maintenance/department/engine
 	name = "Engineering Maintenance"
 	icon_state = "maint_engi"
 
-/area/deltastation/maintenance/department/science/xenobiology
+/area/station/maintenance/department/science/xenobiology
 	name = "Xenobiology Maintenance"
 	icon_state = "xenomaint"
 
 //Maintenance - Generic
 
-/area/deltastation/maintenance/aft
+/area/station/maintenance/aft
 	name = "Aft Maintenance"
 	icon_state = "amaint"
 
-/area/deltastation/maintenance/aft/secondary
+/area/station/maintenance/aft/secondary
 	name = "Aft Maintenance"
 	icon_state = "amaint_2"
 
-/area/deltastation/maintenance/central
+/area/station/maintenance/central
 	name = "Central Maintenance"
 	icon_state = "maintcentral"
 
-/area/deltastation/maintenance/central/secondary
+/area/station/maintenance/central/secondary
 	name = "Central Maintenance"
 	icon_state = "maintcentral"
 
-/area/deltastation/maintenance/fore
+/area/station/maintenance/fore
 	name = "Fore Maintenance"
 	icon_state = "fmaint"
 
-/area/deltastation/maintenance/fore/secondary
+/area/station/maintenance/fore/secondary
 	name = "Fore Maintenance"
 	icon_state = "fmaint_2"
 
-/area/deltastation/maintenance/starboard
+/area/station/maintenance/starboard
 	name = "Starboard Maintenance"
 	icon_state = "smaint"
 
-/area/deltastation/maintenance/starboard/central
+/area/station/maintenance/starboard/central
 	name = "Central Starboard Maintenance"
 	icon_state = "smaint"
 
-/area/deltastation/maintenance/starboard/secondary
+/area/station/maintenance/starboard/secondary
 	name = "Secondary Starboard Maintenance"
 	icon_state = "smaint_2"
 
-/area/deltastation/maintenance/starboard/aft
+/area/station/maintenance/starboard/aft
 	name = "Starboard Quarter Maintenance"
 	icon_state = "asmaint"
 
-/area/deltastation/maintenance/starboard/aft/secondary
+/area/station/maintenance/starboard/aft/secondary
 	name = "Secondary Starboard Quarter Maintenance"
 	icon_state = "asmaint_2"
 
-/area/deltastation/maintenance/starboard/fore
+/area/station/maintenance/starboard/fore
 	name = "Starboard Bow Maintenance"
 	icon_state = "fsmaint"
 
-/area/deltastation/maintenance/port
+/area/station/maintenance/port
 	name = "Port Maintenance"
 	icon_state = "pmaint"
 
-/area/deltastation/maintenance/port/central
+/area/station/maintenance/port/central
 	name = "Central Port Maintenance"
 	icon_state = "maintcentral"
 
-/area/deltastation/maintenance/port/aft
+/area/station/maintenance/port/aft
 	name = "Port Quarter Maintenance"
 	icon_state = "apmaint"
 
-/area/deltastation/maintenance/port/fore
+/area/station/maintenance/port/fore
 	name = "Port Bow Maintenance"
 	icon_state = "fpmaint"
 
-/area/deltastation/maintenance/disposal
+/area/station/maintenance/disposal
 	name = "Waste Disposal"
 	icon_state = "disposal"
 
-/area/deltastation/maintenance/disposal/incinerator
+/area/station/maintenance/disposal/incinerator
 	name = "Incinerator"
 	icon_state = "disposal"
 
 //Hallway
 
-/area/deltastation/hallway/primary/aft
+/area/station/hallway/primary/aft
 	name = "Aft Primary Hallway"
 	icon_state = "hallA"
 
-/area/deltastation/hallway/primary/fore
+/area/station/hallway/primary/fore
 	name = "Fore Primary Hallway"
 	icon_state = "hallF"
 
-/area/deltastation/hallway/primary/starboard
+/area/station/hallway/primary/starboard
 	name = "Starboard Primary Hallway"
 	icon_state = "hallS"
 
-/area/deltastation/hallway/primary/port
+/area/station/hallway/primary/port
 	name = "Port Primary Hallway"
 	icon_state = "hallP"
 
-/area/deltastation/hallway/primary/central
+/area/station/hallway/primary/central
 	name = "Central Primary Hallway"
 	icon_state = "hallC"
 
-/area/deltastation/hallway/secondary/command
+/area/station/hallway/secondary/command
 	name = "Command Hallway"
 	icon_state = "bridge_hallway"
 
-/area/deltastation/hallway/secondary/construction
+/area/station/hallway/secondary/construction
 	name = "Construction Area"
 	icon_state = "construction"
 
-/area/deltastation/hallway/secondary/exit
+/area/station/hallway/secondary/exit
 	name = "Escape Shuttle Hallway"
 	icon_state = "escape"
 
-/area/deltastation/hallway/secondary/exit/departure_lounge
+/area/station/hallway/secondary/exit/departure_lounge
 	name = "Departure Lounge"
 	icon_state = "escape_lounge"
 
-/area/deltastation/hallway/secondary/entry
+/area/station/hallway/secondary/entry
 	name = "Arrival Shuttle Hallway"
 	icon_state = "entry"
 
-/area/deltastation/hallway/secondary/service
+/area/station/hallway/secondary/service
 	name = "Service Hallway"
 	icon_state = "hall_service"
 
 //Command
 
-/area/deltastation/bridge
+/area/station/bridge
 	name = "Bridge"
 	icon_state = "bridge"
 	soundscape_playlist = list('sound/ambience/signal.ogg')
 
-/area/deltastation/bridge/meeting_room
+/area/station/bridge/meeting_room
 	name = "Heads of Staff Meeting Room"
 	icon_state = "meeting"
 
-/area/deltastation/bridge/meeting_room/council
+/area/station/bridge/meeting_room/council
 	name = "Council Chamber"
 	icon_state = "meeting"
 
-/area/deltastation/bridge/showroom/corporate
+/area/station/bridge/showroom/corporate
 	name = "Corporate Showroom"
 	icon_state = "showroom"
 
-/area/deltastation/crew_quarters/heads/captain
+/area/station/crew_quarters/heads/captain
 	name = "Captain's Office"
 	icon_state = "captain"
 
-/area/deltastation/crew_quarters/heads/captain/private
+/area/station/crew_quarters/heads/captain/private
 	name = "Captain's Quarters"
 	icon_state = "captain"
 
-/area/deltastation/crew_quarters/heads/chief
+/area/station/crew_quarters/heads/chief
 	name = "Chief Engineer's Office"
 	icon_state = "ce_office"
 
-/area/deltastation/crew_quarters/heads/cmo
+/area/station/crew_quarters/heads/cmo
 	name = "Chief Medical Officer's Office"
 	icon_state = "cmo_office"
 
-/area/deltastation/crew_quarters/heads/hop
+/area/station/crew_quarters/heads/hop
 	name = "Head of Personnel's Office"
 	icon_state = "hop_office"
 
-/area/deltastation/crew_quarters/heads/hos
+/area/station/crew_quarters/heads/hos
 	name = "Head of Security's Office"
 	icon_state = "hos_office"
 
-/area/deltastation/crew_quarters/heads/hor
+/area/station/crew_quarters/heads/hor
 	name = "Research Director's Office"
 	icon_state = "rd_office"
 
-/area/deltastation/comms
+/area/station/comms
 	name = "Communications Relay"
 	icon_state = "tcomsatcham"
 
-/area/deltastation/server
+/area/station/server
 	name = "Messaging Server Room"
 	icon_state = "server"
 
 //Crew
 
-/area/deltastation/crew_quarters/dorms
+/area/station/crew_quarters/dorms
 	name = "Dormitories"
 	icon_state = "Sleep"
 
-/area/deltastation/crew_quarters/toilet
+/area/station/crew_quarters/toilet
 	name = "Dormitory Toilets"
 	icon_state = "toilet"
 
-/area/deltastation/crew_quarters/toilet/auxiliary
+/area/station/crew_quarters/toilet/auxiliary
 	name = "Auxiliary Restrooms"
 	icon_state = "toilet"
 
-/area/deltastation/crew_quarters/toilet/locker
+/area/station/crew_quarters/toilet/locker
 	name = "Locker Toilets"
 	icon_state = "toilet"
 
-/area/deltastation/crew_quarters/toilet/restrooms
+/area/station/crew_quarters/toilet/restrooms
 	name = "Restrooms"
 	icon_state = "toilet"
 
-/area/deltastation/crew_quarters/locker
+/area/station/crew_quarters/locker
 	name = "Locker Room"
 	icon_state = "locker"
 
-/area/deltastation/crew_quarters/lounge
+/area/station/crew_quarters/lounge
 	name = "Lounge"
 	icon_state = "yellow"
 
-/area/deltastation/crew_quarters/fitness
+/area/station/crew_quarters/fitness
 	name = "Fitness Room"
 	icon_state = "fitness"
 
-/area/deltastation/crew_quarters/fitness/locker_room
+/area/station/crew_quarters/fitness/locker_room
 	name = "Unisex Locker Room"
 	icon_state = "fitness"
 
-/area/deltastation/crew_quarters/fitness/recreation
+/area/station/crew_quarters/fitness/recreation
 	name = "Recreation Area"
 	icon_state = "fitness"
 
-/area/deltastation/holodeck
+/area/station/holodeck
 	name = "Holodeck"
 	icon_state = "fitness"
 
-/area/deltastation/holodeck/rec_center
+/area/station/holodeck/rec_center
 	name = "Holodeck Recreation Center"
 	icon_state = "fitness"
 
-/area/deltastation/crew_quarters/cafeteria
+/area/station/crew_quarters/cafeteria
 	name = "Cafeteria"
 	icon_state = "cafeteria"
 
-/area/deltastation/crew_quarters/kitchen
+/area/station/crew_quarters/kitchen
 	name = "Kitchen"
 	icon_state = "kitchen"
 
-/area/deltastation/crew_quarters/kitchen/coldroom
+/area/station/crew_quarters/kitchen/coldroom
 	name = "Kitchen Cold Room"
 	icon_state = "kitchen_cold"
 
-/area/deltastation/crew_quarters/bar
+/area/station/crew_quarters/bar
 	name = "Bar"
 	icon_state = "bar"
 
-/area/deltastation/crew_quarters/bar/atrium
+/area/station/crew_quarters/bar/atrium
 	name = "Atrium"
 	icon_state = "bar"
 
-/area/deltastation/crew_quarters/electronic_marketing_den
+/area/station/crew_quarters/electronic_marketing_den
 	name = "Electronic Marketing Den"
 	icon_state = "bar"
 
-/area/deltastation/crew_quarters/abandoned_gambling_den
+/area/station/crew_quarters/abandoned_gambling_den
 	name = "Abandoned Gambling Den"
 	icon_state = "abandoned_g_den"
 
-/area/deltastation/crew_quarters/abandoned_gambling_den/secondary
+/area/station/crew_quarters/abandoned_gambling_den/secondary
 	icon_state = "abandoned_g_den_2"
 
-/area/deltastation/crew_quarters/theatre
+/area/station/crew_quarters/theatre
 	name = "Theatre"
 	icon_state = "Theatre"
 
-/area/deltastation/crew_quarters/theatre/abandoned
+/area/station/crew_quarters/theatre/abandoned
 	name = "Abandoned Theatre"
 	icon_state = "Theatre"
 
-/area/deltastation/library
+/area/station/library
 	name = "Library"
 	icon_state = "library"
 
-/area/deltastation/library/lounge
+/area/station/library/lounge
 	name = "Library Lounge"
 	icon_state = "library"
 
-/area/deltastation/library/abandoned
+/area/station/library/abandoned
 	name = "Abandoned Library"
 	icon_state = "library"
 
-/area/deltastation/chapel
+/area/station/chapel
 	icon_state = "chapel"
 	soundscape_playlist = SCAPE_STATION_HOLY
 
-/area/deltastation/chapel/main
+/area/station/chapel/main
 	name = "Chapel"
 
-/area/deltastation/chapel/main/monastery
+/area/station/chapel/main/monastery
 	name = "Monastery"
 
-/area/deltastation/chapel/office
+/area/station/chapel/office
 	name = "Chapel Office"
 	icon_state = "chapeloffice"
 
-/area/deltastation/chapel/asteroid
+/area/station/chapel/asteroid
 	name = "Chapel Asteroid"
 	icon_state = "explored"
 
-/area/deltastation/chapel/asteroid/monastery
+/area/station/chapel/asteroid/monastery
 	name = "Monastery Asteroid"
 
-/area/deltastation/chapel/dock
+/area/station/chapel/dock
 	name = "Chapel Dock"
 	icon_state = "construction"
 
-/area/deltastation/lawoffice
+/area/station/lawoffice
 	name = "Law Office"
 	icon_state = "law"
 
 
 //Engineering
 
-/area/deltastation/engine
+/area/station/engine
 	soundscape_playlist = SCAPE_STATION_ENGINEERING
 
-/area/deltastation/engine/engine_smes
+/area/station/engine/engine_smes
 	name = "Engineering SMES"
 	icon_state = "engine_smes"
 
-/area/deltastation/engine/engineering
+/area/station/engine/engineering
 	name = "Engineering"
 	icon_state = "engine"
 
-/area/deltastation/engine/atmos
+/area/station/engine/atmos
 	name = "Atmospherics"
 	icon_state = "atmos"
 
-/area/deltastation/engine/atmospherics_engine
+/area/station/engine/atmospherics_engine
 	name = "Atmospherics Engine"
 	icon_state = "atmos_engine"
 
-/area/deltastation/engine/engine_room //donut station specific
+/area/station/engine/engine_room //donut station specific
 	name = "Engine Room"
 	icon_state = "atmos_engine"
 
-/area/deltastation/engine/engine_room/external
+/area/station/engine/engine_room/external
 	name = "Supermatter External Access"
 	icon_state = "engine_foyer"
 
-/area/deltastation/engine/supermatter
+/area/station/engine/supermatter
 	name = "Supermatter Engine"
 	icon_state = "engine_sm"
 
-/area/deltastation/engine/break_room
+/area/station/engine/break_room
 	name = "Engineering Foyer"
 	icon_state = "engine_foyer"
 
-/area/deltastation/engine/gravity_generator
+/area/station/engine/gravity_generator
 	name = "Gravity Generator Room"
 	icon_state = "grav_gen"
 
-/area/deltastation/engine/storage
+/area/station/engine/storage
 	name = "Engineering Storage"
 	icon_state = "engi_storage"
 
-/area/deltastation/engine/storage_shared
+/area/station/engine/storage_shared
 	name = "Shared Engineering Storage"
 	icon_state = "engi_storage"
 
-/area/deltastation/engine/transit_tube
+/area/station/engine/transit_tube
 	name = "Transit Tube"
 	icon_state = "transit_tube"
 
 
 //Solars
 
-/area/deltastation/solar
+/area/station/solar
 	requires_power = 0
 	soundscape_playlist = SCAPE_STATION_ENGINEERING
 
-/area/deltastation/solar/fore
+/area/station/solar/fore
 	name = "Fore Solar Array"
 	icon_state = "yellow"
 
-/area/deltastation/solar/aft
+/area/station/solar/aft
 	name = "Aft Solar Array"
 	icon_state = "yellow"
 
-/area/deltastation/solar/aux/port
+/area/station/solar/aux/port
 	name = "Port Bow Auxiliary Solar Array"
 	icon_state = "panelsA"
 
-/area/deltastation/solar/aux/starboard
+/area/station/solar/aux/starboard
 	name = "Starboard Bow Auxiliary Solar Array"
 	icon_state = "panelsA"
 
-/area/deltastation/solar/starboard
+/area/station/solar/starboard
 	name = "Starboard Solar Array"
 	icon_state = "panelsS"
 
-/area/deltastation/solar/starboard/aft
+/area/station/solar/starboard/aft
 	name = "Starboard Quarter Solar Array"
 	icon_state = "panelsAS"
 
-/area/deltastation/solar/starboard/fore
+/area/station/solar/starboard/fore
 	name = "Starboard Bow Solar Array"
 	icon_state = "panelsFS"
 
-/area/deltastation/solar/port
+/area/station/solar/port
 	name = "Port Solar Array"
 	icon_state = "panelsP"
 
-/area/deltastation/solar/port/aft
+/area/station/solar/port/aft
 	name = "Port Quarter Solar Array"
 	icon_state = "panelsAP"
 
-/area/deltastation/solar/port/fore
+/area/station/solar/port/fore
 	name = "Port Bow Solar Array"
 	icon_state = "panelsFP"
 
 
 //Solar Maint
 
-/area/deltastation/maintenance/solars
+/area/station/maintenance/solars
 	name = "Solar Maintenance"
 	icon_state = "yellow"
 
-/area/deltastation/maintenance/solars/port
+/area/station/maintenance/solars/port
 	name = "Port Solar Maintenance"
 	icon_state = "SolarcontrolP"
 
-/area/deltastation/maintenance/solars/port/aft
+/area/station/maintenance/solars/port/aft
 	name = "Port Quarter Solar Maintenance"
 	icon_state = "SolarcontrolAP"
 
-/area/deltastation/maintenance/solars/port/fore
+/area/station/maintenance/solars/port/fore
 	name = "Port Bow Solar Maintenance"
 	icon_state = "SolarcontrolFP"
 
-/area/deltastation/maintenance/solars/starboard
+/area/station/maintenance/solars/starboard
 	name = "Starboard Solar Maintenance"
 	icon_state = "SolarcontrolS"
 
-/area/deltastation/maintenance/solars/starboard/aft
+/area/station/maintenance/solars/starboard/aft
 	name = "Starboard Quarter Solar Maintenance"
 	icon_state = "SolarcontrolAS"
 
-/area/deltastation/maintenance/solars/starboard/fore
+/area/station/maintenance/solars/starboard/fore
 	name = "Starboard Bow Solar Maintenance"
 	icon_state = "SolarcontrolFS"
 
 //Teleporter
 
-/area/deltastation/teleporter
+/area/station/teleporter
 	name = "Teleporter Room"
 	icon_state = "teleporter"
 	soundscape_playlist = SCAPE_STATION_ENGINEERING
 
-/area/deltastation/gateway
+/area/station/gateway
 	name = "Gateway"
 	icon_state = "gateway"
 	soundscape_playlist = SCAPE_STATION_ENGINEERING
 
 //MedBay
 
-/area/deltastation/medical
+/area/station/medical
 	name = "Medical"
 	icon_state = "medbay3"
 	soundscape_playlist = SCAPE_STATION_MEDICAL
 
-/area/deltastation/medical/abandoned
+/area/station/medical/abandoned
 	name = "Abandoned Medbay"
 	icon_state = "medbay3"
 	soundscape_playlist = list('sound/ambience/signal.ogg')
 
-/area/deltastation/medical/medbay/central
+/area/station/medical/medbay/central
 	name = "Medbay Central"
 	icon_state = "medbay"
 
-/area/deltastation/medical/medbay/lobby
+/area/station/medical/medbay/lobby
 	name = "Medbay Lobby"
 	icon_state = "medbay"
 
 	//Medbay is a large area, these additional areas help level out APC load.
 
-/area/deltastation/medical/medbay/zone2
+/area/station/medical/medbay/zone2
 	name = "Medbay"
 	icon_state = "medbay2"
 
-/area/deltastation/medical/medbay/aft
+/area/station/medical/medbay/aft
 	name = "Medbay Aft"
 	icon_state = "medbay3"
 
-/area/deltastation/medical/storage
+/area/station/medical/storage
 	name = "Medbay Storage"
 	icon_state = "medbay2"
 
-/area/deltastation/medical/patients_rooms
+/area/station/medical/patients_rooms
 	name = "Patients' Rooms"
 	icon_state = "patients"
 
-/area/deltastation/medical/patients_rooms/room_a
+/area/station/medical/patients_rooms/room_a
 	name = "Patient Room A"
 	icon_state = "patients"
 
-/area/deltastation/medical/patients_rooms/room_b
+/area/station/medical/patients_rooms/room_b
 	name = "Patient Room B"
 	icon_state = "patients"
 
-/area/deltastation/medical/virology
+/area/station/medical/virology
 	name = "Virology"
 	icon_state = "virology"
 
-/area/deltastation/medical/morgue
+/area/station/medical/morgue
 	name = "Morgue"
 	icon_state = "morgue"
 	soundscape_playlist = SCAPE_STATION_SPOOKY
 
-/area/deltastation/medical/chemistry
+/area/station/medical/chemistry
 	name = "Chemistry"
 	icon_state = "chem"
 
-/area/deltastation/medical/surgery
+/area/station/medical/surgery
 	name = "Surgery"
 	icon_state = "surgery"
 
-/area/deltastation/medical/cryo
+/area/station/medical/cryo
 	name = "Cryogenics"
 	icon_state = "cryo"
 
-/area/deltastation/medical/exam_room
+/area/station/medical/exam_room
 	name = "Exam Room"
 	icon_state = "exam_room"
 
-/area/deltastation/medical/genetics
+/area/station/medical/genetics
 	name = "Genetics Lab"
 	icon_state = "genetics"
 
-/area/deltastation/medical/genetics/cloning
+/area/station/medical/genetics/cloning
 	name = "Cloning Lab"
 	icon_state = "cloning"
 
-/area/deltastation/medical/sleeper
+/area/station/medical/sleeper
 	name = "Medbay Treatment Center"
 	icon_state = "exam_room"
 
 
 //Security
 
-/area/deltastation/security
+/area/station/security
 	name = "Security"
 	icon_state = "security"
 	soundscape_playlist = SCAPE_STATION_HIGHSEC
 
-/area/deltastation/security/main
+/area/station/security/main
 	name = "Security Office"
 	icon_state = "security"
 
-/area/deltastation/security/brig
+/area/station/security/brig
 	name = "Brig"
 	icon_state = "brig"
 
-/area/deltastation/security/courtroom
+/area/station/security/courtroom
 	name = "Courtroom"
 	icon_state = "courtroom"
 
-/area/deltastation/security/prison
+/area/station/security/prison
 	name = "Prison Wing"
 	icon_state = "sec_prison"
 
-/area/deltastation/security/processing
+/area/station/security/processing
 	name = "Labor Shuttle Dock"
 	icon_state = "sec_prison"
 
-/area/deltastation/security/processing/cremation
+/area/station/security/processing/cremation
 	name = "Security Crematorium"
 	icon_state = "sec_prison"
 
-/area/deltastation/security/warden
+/area/station/security/warden
 	name = "Brig Control"
 	icon_state = "Warden"
 
-/area/deltastation/security/detectives_office
+/area/station/security/detectives_office
 	name = "Detective's Office"
 	icon_state = "detective"
 	soundscape_playlist = list('sound/ambience/ambidet1.ogg','sound/ambience/ambidet2.ogg')
 
-/area/deltastation/security/detectives_office/private_investigators_office
+/area/station/security/detectives_office/private_investigators_office
 	name = "Private Investigator's Office"
 	icon_state = "detective"
 
-/area/deltastation/security/range
+/area/station/security/range
 	name = "Firing Range"
 	icon_state = "firingrange"
 
-/area/deltastation/security/execution
+/area/station/security/execution
 	icon_state = "execution_room"
 
-/area/deltastation/security/execution/transfer
+/area/station/security/execution/transfer
 	name = "Transfer Centre"
 
-/area/deltastation/security/execution/education
+/area/station/security/execution/education
 	name = "Prisoner Education Chamber"
 
-/area/deltastation/security/nuke_storage
+/area/station/security/nuke_storage
 	name = "Vault"
 	icon_state = "nuke_storage"
 
-/area/deltastation/ai_monitored/nuke_storage
+/area/station/ai_monitored/nuke_storage
 	name = "Vault"
 	icon_state = "nuke_storage"
 
-/area/deltastation/security/checkpoint
+/area/station/security/checkpoint
 	name = "Security Checkpoint"
 	icon_state = "checkpoint1"
 
-/area/deltastation/security/checkpoint/auxiliary
+/area/station/security/checkpoint/auxiliary
 	icon_state = "checkpoint_aux"
 
-/area/deltastation/security/checkpoint/escape
+/area/station/security/checkpoint/escape
 	icon_state = "checkpoint_esc"
 
-/area/deltastation/security/checkpoint/supply
+/area/station/security/checkpoint/supply
 	name = "Security Post - Cargo Bay"
 	icon_state = "checkpoint_supp"
 
-/area/deltastation/security/checkpoint/engineering
+/area/station/security/checkpoint/engineering
 	name = "Security Post - Engineering"
 	icon_state = "checkpoint_engi"
 
-/area/deltastation/security/checkpoint/medical
+/area/station/security/checkpoint/medical
 	name = "Security Post - Medbay"
 	icon_state = "checkpoint_med"
 
-/area/deltastation/security/checkpoint/science
+/area/station/security/checkpoint/science
 	name = "Security Post - Science"
 	icon_state = "checkpoint_sci"
 
-/area/deltastation/security/checkpoint/science/research
+/area/station/security/checkpoint/science/research
 	name = "Security Post - Research Division"
 	icon_state = "checkpoint_res"
 
-/area/deltastation/security/checkpoint/customs
+/area/station/security/checkpoint/customs
 	name = "Customs"
 	icon_state = "customs_point"
 
-/area/deltastation/security/checkpoint/customs/auxiliary
+/area/station/security/checkpoint/customs/auxiliary
 	icon_state = "customs_point_aux"
 
 
 //Service
 
-/area/deltastation/quartermaster
+/area/station/quartermaster
 	name = "Quartermasters"
 	icon_state = "quart"
 
-/area/deltastation/quartermaster/sorting
+/area/station/quartermaster/sorting
 	name = "Delivery Office"
 	icon_state = "cargo_delivery"
 
-/area/deltastation/quartermaster/warehouse
+/area/station/quartermaster/warehouse
 	name = "Warehouse"
 	icon_state = "cargo_warehouse"
 
-/area/deltastation/quartermaster/office
+/area/station/quartermaster/office
 	name = "Cargo Office"
 	icon_state = "quartoffice"
 
-/area/deltastation/quartermaster/storage
+/area/station/quartermaster/storage
 	name = "Cargo Bay"
 	icon_state = "cargo_bay"
 
-/area/deltastation/quartermaster/qm
+/area/station/quartermaster/qm
 	name = "Quartermaster's Office"
 	icon_state = "quart"
 
-/area/deltastation/quartermaster/miningdock
+/area/station/quartermaster/miningdock
 	name = "Mining Dock"
 	icon_state = "mining"
 
-/area/deltastation/quartermaster/miningoffice
+/area/station/quartermaster/miningoffice
 	name = "Mining Office"
 	icon_state = "mining"
 
-/area/deltastation/janitor
+/area/station/janitor
 	name = "Custodial Closet"
 	icon_state = "janitor"
 
-/area/deltastation/hydroponics
+/area/station/hydroponics
 	name = "Hydroponics"
 	icon_state = "hydro"
 
-/area/deltastation/hydroponics/garden
+/area/station/hydroponics/garden
 	name = "Garden"
 	icon_state = "garden"
 
-/area/deltastation/hydroponics/garden/abandoned
+/area/station/hydroponics/garden/abandoned
 	name = "Abandoned Garden"
 	icon_state = "abandoned_garden"
 
-/area/deltastation/hydroponics/garden/monastery
+/area/station/hydroponics/garden/monastery
 	name = "Monastery Garden"
 	icon_state = "hydro"
 
 
 //Science
 
-/area/deltastation/science
+/area/station/science
 	name = "Science Division"
 	icon_state = "toxlab"
 
-/area/deltastation/science/lab
+/area/station/science/lab
 	name = "Research and Development"
 	icon_state = "toxlab"
 
-/area/deltastation/science/xenobiology
+/area/station/science/xenobiology
 	name = "Xenobiology Lab"
 	icon_state = "toxlab"
 
-/area/deltastation/science/storage
+/area/station/science/storage
 	name = "Toxins Storage"
 	icon_state = "toxstorage"
 
-/area/deltastation/science/test_area
+/area/station/science/test_area
 	name = "Toxins Test Area"
 	icon_state = "toxtest"
 
-/area/deltastation/science/mixing
+/area/station/science/mixing
 	name = "Toxins Mixing Lab"
 	icon_state = "toxmix"
 
-/area/deltastation/science/mixing/chamber
+/area/station/science/mixing/chamber
 	name = "Toxins Mixing Chamber"
 	icon_state = "toxmix"
 
-/area/deltastation/science/misc_lab
+/area/station/science/misc_lab
 	name = "Testing Lab"
 	icon_state = "toxmisc"
 
-/area/deltastation/science/misc_lab/range
+/area/station/science/misc_lab/range
 	name = "Research Testing Range"
 	icon_state = "toxmisc"
 
-/area/deltastation/science/server
+/area/station/science/server
 	name = "Research Division Server Room"
 	icon_state = "server"
 
-/area/deltastation/science/explab
+/area/station/science/explab
 	name = "Experimentation Lab"
 	icon_state = "toxmisc"
 
-/area/deltastation/science/robotics
+/area/station/science/robotics
 	name = "Robotics"
 	icon_state = "medresearch"
 
-/area/deltastation/science/robotics/mechbay
+/area/station/science/robotics/mechbay
 	name = "Mech Bay"
 	icon_state = "mechbay"
 
-/area/deltastation/science/robotics/lab
+/area/station/science/robotics/lab
 	name = "Robotics Lab"
 	icon_state = "ass_line"
 
-/area/deltastation/science/research
+/area/station/science/research
 	name = "Research Division"
 	icon_state = "medresearch"
 
-/area/deltastation/science/research/abandoned
+/area/station/science/research/abandoned
 	name = "Abandoned Research Lab"
 	icon_state = "medresearch"
 
-/area/deltastation/science/nanite
+/area/station/science/nanite
 	name = "Nanite Lab"
 	icon_state = "toxmisc"
 
 //Storage
 
-/area/deltastation/storage/tools
+/area/station/storage/tools
 	name = "Auxiliary Tool Storage"
 	icon_state = "storage"
 
-/area/deltastation/storage/primary
+/area/station/storage/primary
 	name = "Primary Tool Storage"
 	icon_state = "primarystorage"
 
-/area/deltastation/storage/art
+/area/station/storage/art
 	name = "Art Supply Storage"
 	icon_state = "storage"
 
-/area/deltastation/storage/tcom
+/area/station/storage/tcom
 	name = "Telecomms Storage"
 	icon_state = "green"
 
-/area/deltastation/storage/eva
+/area/station/storage/eva
 	name = "EVA Storage"
 	icon_state = "eva"
 
-/area/deltastation/storage/emergency/starboard
+/area/station/storage/emergency/starboard
 	name = "Starboard Emergency Storage"
 	icon_state = "emergencystorage"
 
-/area/deltastation/storage/emergency/port
+/area/station/storage/emergency/port
 	name = "Port Emergency Storage"
 	icon_state = "emergencystorage"
 
-/area/deltastation/storage/tech
+/area/station/storage/tech
 	name = "Technical Storage"
 	icon_state = "auxstorage"
 
 //Construction
 
-/area/deltastation/construction
+/area/station/construction
 	name = "Construction Area"
 	icon_state = "yellow"
 	soundscape_playlist = SCAPE_STATION_ENGINEERING
 
-/area/deltastation/construction/mining/aux_base
+/area/station/construction/mining/aux_base
 	name = "Auxiliary Base Construction"
 	icon_state = "aux_base_construction"
 
-/area/deltastation/construction/storage_wing
+/area/station/construction/storage_wing
 	name = "Storage Wing"
 	icon_state = "storage_wing"
 
 // Vacant Rooms
-/area/deltastation/vacant_room
+/area/station/vacant_room
 	name = "Vacant Room"
 	soundscape_playlist = SCAPE_STATION_MAINTENANCE
 	icon_state = "vacant_room"
 
-/area/deltastation/vacant_room/office
+/area/station/vacant_room/office
 	name = "Vacant Office"
 	icon_state = "vacant_office"
 
-/area/deltastation/vacant_room/commissary
+/area/station/vacant_room/commissary
 	name = "Vacant Commissary"
 	icon_state = "vacant_commissary"
 
 //AI
 
-/area/deltastation/ai_monitored/security/armory
+/area/station/ai_monitored/security/armory
 	name = "Armory"
 	icon_state = "armory"
 	soundscape_playlist = SCAPE_STATION_HIGHSEC
 
-/area/deltastation/ai_monitored/storage/eva
+/area/station/ai_monitored/storage/eva
 	name = "EVA Storage"
 	icon_state = "eva"
 	soundscape_playlist = SCAPE_STATION_HIGHSEC
 
-/area/deltastation/ai_monitored/storage/satellite
+/area/station/ai_monitored/storage/satellite
 	name = "AI Satellite Maint"
 	icon_state = "storage"
 	soundscape_playlist = SCAPE_STATION_HIGHSEC
 
 	//Turret_protected
 
-/area/deltastation/ai_monitored/turret_protected
+/area/station/ai_monitored/turret_protected
 	soundscape_playlist = list('sound/ambience/ambimalf.ogg', 'sound/ambience/ambitech.ogg', 'sound/ambience/ambitech2.ogg', 'sound/ambience/ambiatmos.ogg', 'sound/ambience/ambiatmos2.ogg')
 
-/area/deltastation/ai_monitored/turret_protected/ai_upload
+/area/station/ai_monitored/turret_protected/ai_upload
 	name = "AI Upload Chamber"
 	icon_state = "ai_upload"
 
-/area/deltastation/ai_monitored/turret_protected/ai_upload_foyer
+/area/station/ai_monitored/turret_protected/ai_upload_foyer
 	name = "AI Upload Access"
 	icon_state = "ai_foyer"
 
-/area/deltastation/ai_monitored/turret_protected/ai
+/area/station/ai_monitored/turret_protected/ai
 	name = "AI Chamber"
 	icon_state = "ai_chamber"
 
-/area/deltastation/ai_monitored/turret_protected/aisat
+/area/station/ai_monitored/turret_protected/aisat
 	name = "AI Satellite"
 	icon_state = "ai"
 
-/area/deltastation/ai_monitored/turret_protected/aisat/atmos
+/area/station/ai_monitored/turret_protected/aisat/atmos
 	name = "AI Satellite Atmos"
 	icon_state = "ai"
 
-/area/deltastation/ai_monitored/turret_protected/aisat/foyer
+/area/station/ai_monitored/turret_protected/aisat/foyer
 	name = "AI Satellite Foyer"
 	icon_state = "ai"
 
-/area/deltastation/ai_monitored/turret_protected/aisat/service
+/area/station/ai_monitored/turret_protected/aisat/service
 	name = "AI Satellite Service"
 	icon_state = "ai"
 
-/area/deltastation/ai_monitored/turret_protected/aisat/hallway
+/area/station/ai_monitored/turret_protected/aisat/hallway
 	name = "AI Satellite Hallway"
 	icon_state = "ai"
 
-/area/deltastation/aisat
+/area/station/aisat
 	name = "AI Satellite Exterior"
 	icon_state = "yellow"
 
-/area/deltastation/ai_monitored/turret_protected/aisat_interior
+/area/station/ai_monitored/turret_protected/aisat_interior
 	name = "AI Satellite Antechamber"
 	icon_state = "ai"
 
-/area/deltastation/ai_monitored/turret_protected/AIsatextAS
+/area/station/ai_monitored/turret_protected/AIsatextAS
 	name = "AI Sat Ext"
 	icon_state = "storage"
 
-/area/deltastation/ai_monitored/turret_protected/AIsatextAP
+/area/station/ai_monitored/turret_protected/AIsatextAP
 	name = "AI Sat Ext"
 	icon_state = "storage"
 
 
 // Telecommunications Satellite
 
-/area/deltastation/tcommsat
+/area/station/tcommsat
 	soundscape_playlist = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambitech.ogg',\
 											'sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg')
 
-/area/deltastation/tcommsat/computer
+/area/station/tcommsat/computer
 	name = "Telecomms Control Room"
 	icon_state = "tcomsatcomp"
 
-/area/deltastation/tcommsat/server
+/area/station/tcommsat/server
 	name = "Telecomms Server Room"
 	icon_state = "tcomsatcham"

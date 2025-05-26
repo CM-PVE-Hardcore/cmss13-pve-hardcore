@@ -107,5 +107,17 @@ endmap
 map derelict_almayer_infested
 endmap
 
-map deltastation
+map research_station_beta
+endmap
+
+map research_station_delta
+endmap
+
+map research_station_mu
+endmap
+
+map research_station_phi
+endmap
+
+map research_station_theta
 endmap
